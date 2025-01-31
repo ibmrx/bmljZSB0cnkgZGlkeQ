@@ -36,8 +36,8 @@ function calculateAverage() {
     const langue_td = parseFloat(document.getElementById('langue_td').value);
     const ded_exam = parseFloat(document.getElementById('ded_exam').value);
 
-    const note_physique = (physique_td_tp * 0.4) + (physique_exam * 0.6);
-    const note_chimie = (chimie_td_tp * 0.4) + (chimie_exam * 0.6);
+    const note_physique = ((physique_td_tp / 2) * 0.4) + (physique_exam * 0.6);
+    const note_chimie = ((chimie_td_tp / 2) * 0.4) + (chimie_exam * 0.6);
     const note_analyse = (analyse_td * 0.4) + (analyse_exam * 0.6);
     const note_algebre = (algebre_td * 0.4) + (algebre_exam * 0.6);
     const note_proba = (proba_td * 0.4) + (proba_exam * 0.6);
