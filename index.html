@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Université de Béjaïa - Calcul de la Moyenne</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="logo">
+        <a href="https://www.univ-bejaia.dz/" target="_blank">
+            <img src="https://assets.onecompiler.app/437muad7y/437mte38t/1583107465007.jpg" alt="Logo de l'Université de Béjaïa" width="150">
+        </a>
+    </div>
+    <header>
+        <h1>Université de Béjaïa</h1>
+        <p>Plateforme pour gérer votre parcours académique et accéder aux ressources éducatives.</p>
+    </header>
+
+    <main>
+        <section id="options">
+            <div class="options-container">
+                <button onclick="showCalculator()">Calculer la Moyenne</button>
+                <button onclick="window.open('https://elearning.univ-bejaia.dz/', '_blank')">Aller sur le site E-Learning</button>
+                <button onclick="showSupport()">Contacter le Développeur</button>
+            </div>
+        </section>
+
+        <section id="calculator" style="display:none;">
+            <h2>Entrez vos notes</h2>
+            <form id="gradeForm">
+                <label for="year">Année d'étude :</label>
+                <select id="year">
+                    <option value="1">1ère Année</option>
+                </select>
+
+                <label for="specialty">Filière :</label>
+                <select id="specialty">
+                    <option value="Ing">TM & ST Ingénieur</option>
+                </select>
+
+                <label for="semester">Semestre :</label>
+                <select id="semester">
+                    <option value="1">Semestre 1</option>
+                </select>
+                <div class="module">
+                    <h3>Physique</h3>
+                    <label for="physique_td_tp">TD + TP:</label>
+                    <input type="number" id="physique_td_tp" min="0" max="20" required>
+                    <label for="physique_exam">Examen:</label>
+                    <input type="number" id="physique_exam" min="0" max="20" required>
+                </div>
+
+                <div class="module">
+                    <h3>Chimie</h3>
+                    <label for="chimie_td_tp">TD + TP:</label>
+                    <input type="number" id="chimie_td_tp" min="0" max="20" required>
+                    <label for="chimie_exam">Examen:</label>
+                    <input type="number" id="chimie_exam" min="0" max="20" required>
+                </div>
+
+                <div class="module">
+                    <h3>Analyse</h3>
+                    <label for="analyse_td">TD:</label>
+                    <input type="number" id="analyse_td" min="0" max="20" required>
+                    <label for="analyse_exam">Examen:</label>
+                    <input type="number" id="analyse_exam" min="0" max="20" required>
+                </div>
+
+                <div class="module">
+                    <h3>Algèbre</h3>
+                    <label for="algebre_td">TD:</label>
+                    <input type="number" id="algebre_td" min="0" max="20" required>
+                    <label for="algebre_exam">Examen:</label>
+                    <input type="number" id="algebre_exam" min="0" max="20" required>
+                </div>
+
+                <div class="module">
+                    <h3>Probabilité et Statistique</h3>
+                    <label for="proba_td">TD:</label>
+                    <input type="number" id="proba_td" min="0" max="20" required>
+                    <label for="proba_exam">Examen:</label>
+                    <input type="number" id="proba_exam" min="0" max="20" required>
+                </div>
+
+                <div class="module">
+                    <h3>Informatique</h3>
+                    <label for="informatique_td">TD:</label>
+                    <input type="number" id="informatique_td" min="0" max="20" required>
+                </div>
+
+                <div class="module">
+                    <h3>Langue étrangère</h3>
+                    <label for="langue_td">TD:</label>
+                    <input type="number" id="langue_td" min="0" max="20" required>
+                </div>
+
+                <div class="module">
+                    <h3>DED</h3>
+                    <label for="ded_exam">Examen:</label>
+                    <input type="number" id="ded_exam" min="0" max="20" required>
+                </div>
+
+                <div class="result-container">
+                    <button type="button" onclick="calculateAverage()">Calculer la moyenne</button>
+                    <p id="result">Votre moyenne du semestre est: <span id="averageResult">0.00</span></p>
+                </div>
+            </form>
+            <button type="button" onclick="goBack()" class="return-button">Retour</button>
+        </section>
+
+        <section id="support" style="display:none;">
+            <h2>Contacter le Développeur</h2>
+            <p>Pour toute question ou assistance, n'hésitez pas à contacter le développeur :</p>
+            <div class="support-container">
+                <div class="support-item">
+                    <p>Instagram : <a href="https://www.instagram.com/0xe1i">@0xe1i</a></p>
+                </div>
+                <div class="support-item">
+                    <p>Telegram : <a href="https://t.me/xce1i">@xce1i</a></p>
+                </div>
+                <div class="support-item">
+                    <p>Email : <a href="mailto:ibmrx@protonmail.com">@ibmrx</a></p>
+                </div>
+            </div>
+            <button type="button" onclick="goBack()" class="return-button">Retour</button>
+            <p style="font-size: 12px;">29'</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; Université de Béjaïa - جامعة بجاية </p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
