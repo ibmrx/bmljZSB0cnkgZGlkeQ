@@ -27,25 +27,38 @@
         </section>
 
         <section id="calculator" style="display:none;">
-            <h2>Entrez vos notes</h2>
-            <form id="gradeForm">
-                <label for="year">Année d'étude :</label>
-                <select id="year">
-                    <option value="1">1ère Année</option>
-                </select>
+            <h2>Calculer la Moyenne</h2>
+            <div class="options-container" id="calculatorOptions">
+                <button onclick="showSemesterCalculator()">Calculer la moyenne du semestre</button>
+                <button onclick="showModuleCalculator()">Calculer la moyenne d'un module</button>
+            </div>
 
-                <label for="specialty">Filière :</label>
-                <select id="specialty">
-                    <option value="Ing">TM & ST Ingénieur</option>
-                </select>
+            <form id="semesterForm" style="display:none;">
+                <h2>Entrez vos notes</h2>
+                <div class="form-group">
+                    <label for="year">Année d'étude :</label>
+                    <select id="year">
+                        <option value="1">1ère Année</option>
+                    </select>
+                </div>
 
-                <label for="semester">Semestre :</label>
-                <select id="semester">
-                    <option value="1">Semestre 1</option>
-                </select>
+                <div class="form-group">
+                    <label for="specialty">Filière :</label>
+                    <select id="specialty">
+                        <option value="Ing">TM & ST Ingénieur</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="semester">Semestre :</label>
+                    <select id="semester">
+                        <option value="1">Semestre 1</option>
+                    </select>
+                </div>
+
                 <div class="module">
                     <h3>Physique 1</h3>
-                    <label for="physique_td_tp">TD + TP: </label><h>/40</h>
+                    <label for="physique_td_tp">TD + TP:</label>
                     <input type="number" id="physique_td_tp" min="0" max="40" required>
                     <label for="physique_exam">Examen:</label>
                     <input type="number" id="physique_exam" min="0" max="20" required>
@@ -53,7 +66,7 @@
 
                 <div class="module">
                     <h3>Chimie 1</h3>
-                    <label for="chimie_td_tp">TD + TP:</label><h>/40</h>
+                    <label for="chimie_td_tp">TD + TP:</label>
                     <input type="number" id="chimie_td_tp" min="0" max="40" required>
                     <label for="chimie_exam">Examen:</label>
                     <input type="number" id="chimie_exam" min="0" max="20" required>
@@ -104,9 +117,44 @@
                 <div class="result-container">
                     <button type="button" onclick="calculateAverage()">Calculer la moyenne</button>
                     <p id="result">Votre moyenne du semestre est: <span id="averageResult">0.00</span></p>
+                    <button type="button" onclick="goBackToMainMenu()" class="return-button top-return-button">Menu Principal</button>
                 </div>
             </form>
-            <button type="button" onclick="goBack()" class="return-button">Retour</button>
+
+            <form id="moduleForm" style="display:none;">
+    <h2>Calculer la moyenne d'un module</h2>
+    <p>TM & ST INGÉNIEUR</p>
+    <div class="form-group">
+        <label for="moduleSelect">Choisissez un module :</label>
+        <select id="moduleSelect">
+            <option value="physique">Physique 1</option>
+            <option value="chimie">Chimie 1</option>
+            <option value="analyse">Analyse 1</option>
+            <option value="algebre">Algèbre 1</option>
+            <option value="proba">Probabilité et Statistique</option>
+            <option value="informatique">Informatique 1</option>
+            <option value="langue">Langue étrangère (Anglais)</option>
+            <option value="ded">DED</option>
+        </select>
+    </div>
+
+    <!-- Champs pour les notes -->
+    <div class="module">
+        <label for="module_td">TD : <small>(Laisser le vide si le module n'a pas un TD)</small></label>
+        <input type="number" id="module_td" min="0" max="20">
+
+        <label for="module_tp">TP : <small>(Laisser le vide si le module n'a pas un TP)</small></label>
+        <input type="number" id="module_tp" min="0" max="20">
+
+        <label for="module_exam">Examen : <small>(Laisser le vide s'il n'a pas un examen)</small></label>
+        <input type="number" id="module_exam" min="0" max="20">
+    </div>
+
+    <button type="button" onclick="calculateModuleAverage()">Calculer la moyenne du module</button>
+    <p id="moduleResult">Votre moyenne du module est: <span id="moduleaverageResult">0.00</span></p>
+    <button type="button" onclick="goBackInCalculator()" class="return-button top-return-button">Retour</button>
+    <button type="button" onclick="goBackToMainMenu()" class="return-button top-return-button">Menu Principal</button>
+            </form>
         </section>
 
         <section id="support" style="display:none;">
@@ -123,8 +171,7 @@
                     <p>Email : <a href="mailto:ibmrx@protonmail.com">@ibmrx</a></p>
                 </div>
             </div>
-            <button type="button" onclick="goBack()" class="return-button">Retour</button>
-            <p style="font-size: 12px;">29'</p>
+            <button type="button" onclick="goBackToMainMenu()" class="return-button top-return-button">Retour</button>
         </section>
     </main>
 
