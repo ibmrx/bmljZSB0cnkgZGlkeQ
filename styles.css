@@ -101,7 +101,7 @@ main {
 .options-container button {
     width: 100%; 
     max-width: 300px;
-    padding: 10px 20px;
+    padding: 15px 20px;
     background-color: #173866; 
     color: white; 
     border: none; 
@@ -118,6 +118,7 @@ main {
 #calculator, #support {
     background-color: white;
     margin-top: 20px;
+    margin-bottom: 20px;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
