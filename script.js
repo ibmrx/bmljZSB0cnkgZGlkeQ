@@ -96,7 +96,7 @@ function calculateModuleAverage() {
                 alert('Veuillez remplir tous les champs pour ce module.');
                 return;
             }
-            moduleAverage = ((moduleTd + moduleTp) * 0.4) + (moduleExam * 0.6);
+            moduleAverage = ((moduleTd + moduleTp) * 0.2) + (moduleExam * 0.6);
             break;
 
         case 'analyse':
