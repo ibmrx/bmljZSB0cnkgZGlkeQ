@@ -33,7 +33,7 @@ header p {
     margin: 10px 0 0;
 }
 
-..button-container {
+.button-container { 
     display: flex;
     flex-direction: column; 
     align-items: center; 
@@ -115,6 +115,64 @@ main {
     transform: translateY(0); 
 }
 
+#module, #support {
+    background-color: white;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+#module form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#module label {
+    font-weight: bold;
+}
+
+#module select,
+#module button {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    text-align: center;
+}
+
+#module, #support {
+    background-color: white;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+#moduleoptions form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#moduleoptions label {
+    font-weight: bold;
+}
+
+#moduleoptions select,
+#moduleoptions button {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    text-align: center;
+}
+
 #calculator, #support {
     background-color: white;
     margin-top: 15px;
@@ -159,7 +217,7 @@ label {
 }
 
 input {
-    width: 100%;
+    width: 93%;
     padding: 10px;
     margin-top: 5px;
     border: 1px solid #ccc;
@@ -239,7 +297,6 @@ button:hover {
     margin: 0 auto;
     margin-bottom: 5px;
     max-width: 220px;
-
 }
 
 .support-item p {
