@@ -7,25 +7,115 @@ function showCalculator() {
     document.getElementById('moduleForm').style.display = 'none';
 }
 
+function showModuleSection() {
+    document.getElementById('module').style.display = 'block';
+    document.getElementById('options').style.display = 'none';
+    document.getElementById('calculator').style.display = 'none';
+    document.getElementById('support').style.display = 'none';
+}
+
+function showModule(module) {
+    document.getElementById('moduleoptions').style.display = 'none';
+    document.getElementById('moduleContent').style.display = 'block';
+
+    let moduleTitle = '';
+    let moduleContent = '';
+
+    switch (module) {
+        case 'physique':
+            moduleTitle = 'Physique 2';
+            moduleContent = `
+                <p>Eléctrostatique. <a href="https://ing-st.univ-batna2.dz/sites/default/files/ing-st/files/cours-p2-electricite-et-magnetisme.pdf" target="_blank">Télécharger le PDF</a></p>
+            `;
+            break;
+        case 'chimie':
+            moduleTitle = 'Chimie 2';
+            moduleContent = `
+                <p>Constituants de la matière et radioactivité. <a href="https://drive.google.com/file/d/1G1DaWyGKzKHxbJLxQq0sXzRM0b2Uh4Cg/view?usp=sharing" target="_blank">Télécharger le PDF</a></p>
+            `;
+            break;
+        case 'analyse':
+            moduleTitle = 'Analyse 2';
+            moduleContent = `
+                <p>Cours et exercices corrigés d’analyse II. <a href="https://elearning.univ-bejaia.dz/pluginfile.php/1002586/mod_resource/content/0/Cours_BOUKOUCHA%20Rachid_Cours%20et%20Exercices%20Corrig%C3%A9s%20d%E2%80%99Analyse%20II.pdf" target="_blank">Télécharger le PDF</a></p>
+            `;
+            break;
+        case 'algebre':
+            moduleTitle = 'Algèbre 2';
+            moduleContent = `
+                <p>Les Espaces Vectoriels. <a href="https://elearn.univ-tlemcen.dz/pluginfile.php/118248/mod_resource/content/1/Cours%20%20TD%20sur%20les%20espaces%20vectoriels.pdf" target="_blank">Télécharger le PDF</a></p>
+            `;
+            break;
+        case 'thermodynamique':
+            moduleTitle = 'Thermodynamique';
+            moduleContent = `
+                <p>Cours de Thermodynamique. <a href="https://www.univ-usto.dz/images/coursenligne/Cours_thermodynamique_SAKER.pdf" target="_blank">Télécharger le PDF</a></p>
+            `;
+            break;
+        case 'informatique':
+            moduleTitle = 'Informatique 2';
+            moduleContent = `
+                <p>Les Bases Algorithmes de la Programmation en C. <a href="https://drive.google.com/file/d/1mOWFU3CUJrnzMs46Lrz9ha-R55EkZJ6v/view?usp=sharing" target="_blank">Télécharger le PDF</a></p>
+            `;
+            break;
+        case 'metiers':
+            moduleTitle = 'Les Métiers de l\'Ingénieur';
+            moduleContent = `
+                <p>Les Métiers de l'Ingénieur. <a href="https://ing-st.univ-batna2.dz/sites/default/files/ing-st/files/les_metiers_de_lingenieur.pdf" target="_blank">Télécharger le PDF</a></p>
+            `;
+            break;
+        case 'dessin':
+            moduleTitle = 'Dessin Technique';
+            moduleContent = `
+                <p>Cours de Dessin Technique. <a href="https://dspace.univ-guelma.dz/jspui/bitstream/123456789/573/1/Brochure%20Mouassa.pdf" target="_blank">Télécharger le PDF</a></p>
+            `;
+            break;
+        default:
+            moduleTitle = 'Sélectionner un module';
+            moduleContent = '<p>Veuillez sélectionner un module pour afficher le contenu.</p>';
+    }
+
+    document.getElementById('moduleContent').innerHTML = `
+        <h2>${moduleTitle}</h2>
+        ${moduleContent}
+        <button type="button" onclick="goBackInModule()" class="return-button top-return-button">Retour</button>
+        <button type="button" onclick="goBackToMainMenu()" class="return-button top-return-button">Menu Principal</button>
+
+    `
+    ;
+}
+
+function goBackInModule() {
+    // Hide the module content section
+    document.getElementById('moduleContent').style.display = 'none';
+
+    // Show the module selection buttons
+    document.getElementById('moduleoptions').style.display = 'block';
+}
+
 function showSupport() {
+    document.getElementById('module').style.display = 'none';
     document.getElementById('options').style.display = 'none';
     document.getElementById('calculator').style.display = 'none';
     document.getElementById('support').style.display = 'block';
 }
 
 function goBackToMainMenu() {
+    document.getElementById('module').style.display = 'none';
     document.getElementById('calculator').style.display = 'none';
     document.getElementById('support').style.display = 'none';
     document.getElementById('options').style.display = 'block';
 }
 
 function showSemesterCalculator() {
+    document.getElementById('module').style.display = 'none';
     document.getElementById('calculatorOptions').style.display = 'none';
     document.getElementById('semesterForm').style.display = 'block';
     document.getElementById('moduleForm').style.display = 'none';
 }
 
 function goBackInCalculator() {
+    document.getElementById('module').style.display = 'none';
     document.getElementById('semesterForm').style.display = 'none';
     document.getElementById('moduleForm').style.display = 'none';
     document.getElementById('calculatorOptions').style.display = 'block';
