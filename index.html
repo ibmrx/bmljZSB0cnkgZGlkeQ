@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -20,12 +21,28 @@
     <main>
         <section id="options">
             <div class="options-container">
+                <button onclick="showModuleSection()">Espace des Cours</button>
                 <button onclick="showCalculator()">Calculer la Moyenne</button>
                 <button onclick="window.open('https://elearning.univ-bejaia.dz/', '_blank')">Aller sur le site E-Learning</button>
                 <button onclick="showSupport()">Contacter le Développeur</button>
             </div>
         </section>
 
+        <section id="module" style="display:none;">
+    <h2>Sélectionner un Module</h2>
+    <p>Si tu as des résumés de cours, contacte-moi sur <a href="https://www.instagram.com/0xe1i">Instagram</a> pour les partager.</p>
+    <div class="options-container" id="moduleoptions">
+        <button onclick="showModule('physique')">Physique 2</button>
+        <button onclick="showModule('chimie')">Chimie 2</button>
+        <button onclick="showModule('analyse')">Analyse 2</button>
+        <button onclick="showModule('algebre')">Algèbre 2</button>
+        <button onclick="showModule('thermodynamique')">Thermodynamique</button>
+        <button onclick="showModule('informatique')">Informatique 2</button>
+        <button onclick="showModule('metiers')">Les Métiers de l'Ingénieur</button>
+        <button onclick="showModule('dessin')">Dessin Technique</button>
+    </div>
+    <div id="moduleContent" style="display:none;"></div>
+       </section>
         <section id="calculator" style="display:none;">
             <h2>Calculer la Moyenne</h2>
             <div class="options-container" id="calculatorOptions">
