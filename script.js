@@ -48,7 +48,7 @@ function showModule(module) {
                 <p>Les Espaces Vectoriels. <a href="https://elearn.univ-tlemcen.dz/pluginfile.php/118248/mod_resource/content/1/Cours%20%20TD%20sur%20les%20espaces%20vectoriels.pdf" target="_blank">Télécharger le PDF</a></p>
             `;
             break;
-        case 'thermodynamique':
+        case 'ang':
             moduleTitle = 'Anglais 2';
             moduleContent = `
                 <p>Nothing to show right now.</p>
