@@ -48,18 +48,18 @@ function showModule(module) {
                 <p>Les Espaces Vectoriels. <a href="https://elearn.univ-tlemcen.dz/pluginfile.php/118248/mod_resource/content/1/Cours%20%20TD%20sur%20les%20espaces%20vectoriels.pdf" target="_blank">Télécharger le PDF</a></p>
             `;
             break;
-        case 'ang':
-            moduleTitle = 'Anglais 2';
-            moduleContent = `
-                <p>Nothing to show right now.</p>
-            `;
-            break;
         case 'informatique':
             moduleTitle = 'Informatique 2';
             moduleContent = `
                 <p>Les Bases Algorithmes de la Programmation en C. <a href="https://drive.google.com/file/d/1mOWFU3CUJrnzMs46Lrz9ha-R55EkZJ6v/view?usp=sharing" target="_blank">Télécharger le PDF</a></p>
             `;
             break;
+        case 'ang':
+            moduleTitle = 'Anglais 2';
+            moduleContent = `
+                <p>Nothing to show right now.</p>
+            `;
+            break;    
         case 'metiers':
             moduleTitle = 'Les Métiers de l\'Ingénieur';
             moduleContent = `
