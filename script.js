@@ -37,7 +37,7 @@ function showModule(module) {
         case 'analyse':
             moduleTitle = 'Analyse 2';
             moduleContent = `
-                <p>Cours et exercices corrigés d’analyse II. <a href="https://elearning.univ-bejaia.dz/pluginfile.php/1002586/mod_resource/content/0/Cours_BOUKOUCHA%20Rachid_Cours%20et%20Exercices%20Corrig%C3%A9s%20d%E2%80%99Analyse%20II.pdf" target="_blank">Télécharger le PDF</a></p>
+                <p>Intégrales et calcul des Primitives. <a href="https://www.ces-stexupery.be/institut-sainte-marie/espace-interactif/mathematique/vandenbruaenne-andre/prim_integ_new4.pdf" target="_blank">Télécharger le PDF</a></p>
             `;
             break;
         case 'algebre':
