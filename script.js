@@ -29,9 +29,10 @@ function showModule(module) {
             `;
             break;
         case 'chimie':
-            moduleTitle = 'Chimie 2';
+            moduleTitle = 'Chimie 2 (Thermodynamique)';
             moduleContent = `
                 <p>Constituants de la matière et radioactivité. <a href="https://drive.google.com/file/d/1G1DaWyGKzKHxbJLxQq0sXzRM0b2Uh4Cg/view?usp=sharing" target="_blank">Télécharger le PDF</a></p>
+                <p>Cours de Thermodynamique. <a href="https://www.univ-usto.dz/images/coursenligne/Cours_thermodynamique_SAKER.pdf" target="_blank">Télécharger le PDF</a></p>
             `;
             break;
         case 'analyse':
@@ -48,9 +49,9 @@ function showModule(module) {
             `;
             break;
         case 'thermodynamique':
-            moduleTitle = 'Thermodynamique';
+            moduleTitle = 'Anglais 2';
             moduleContent = `
-                <p>Cours de Thermodynamique. <a href="https://www.univ-usto.dz/images/coursenligne/Cours_thermodynamique_SAKER.pdf" target="_blank">Télécharger le PDF</a></p>
+                <p>Nothing to show right now.</p>
             `;
             break;
         case 'informatique':
