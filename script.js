@@ -25,9 +25,9 @@ function showModule(module) {
         case 'show':
             moduleTitle = 'Affichage';
             moduleContent = `
-                <p>Emploi de Temps du S2. <a href="https://elearning.univ-bejaia.dz/pluginfile.php/1372416/mod_resource/content/2/EDT-ST_ING_%20S2-24-25_ING%20TM.pdf" target="_blank">Télécharger le PDF</a></p>
+                <p>Emploi de Temps. <a href="https://elearning.univ-bejaia.dz/pluginfile.php/1372416/mod_resource/content/2/EDT-ST_ING_%20S2-24-25_ING%20TM.pdf" target="_blank">Télécharger le PDF</a></p>
                 <p>Polycopié TP Chimie 2. <a href="https://drive.google.com/file/d/1UXLvKPdFmTW6Kj1HPWsRJBgSyCb39g6G/view" target="_blank">Télécharger le PDF</a></p>
-                <p>Correction page 1 de TP physique S2. <a href="https://drive.google.com/file/d/1PZ7wNatLKgmnv18Rb3aLaSz4sTyCOQmq/view?usp=sharing" target="_blank">Télécharger le PDF</a></p>
+                <p>Correction page 1 de TP physique. <a href="https://drive.google.com/file/d/1PZ7wNatLKgmnv18Rb3aLaSz4sTyCOQmq/view?usp=sharing" target="_blank">Télécharger le PDF</a></p>
             `;
             break;
         
