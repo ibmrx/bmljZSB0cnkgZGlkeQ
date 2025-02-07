@@ -25,7 +25,7 @@ function showModule(module) {
         case 'show':
             moduleTitle = 'Affichage';
             moduleContent = `
-                <p>Programme de S2 ING-TM. <a href="https://elearning.univ-bejaia.dz/pluginfile.php/1372413/mod_resource/content/2/EDT-ST_ING_%20S2-24-25_ING.pdf" target="_blank">Télécharger le JPEG</a></p>
+                <p>Programme de S2 ING-TM. <a href="https://elearning.univ-bejaia.dz/pluginfile.php/1372416/mod_resource/content/2/EDT-ST_ING_%20S2-24-25_ING%20TM.pdf" target="_blank">Télécharger le JPEG</a></p>
             `;
             break;
         
