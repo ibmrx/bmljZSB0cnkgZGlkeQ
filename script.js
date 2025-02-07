@@ -55,6 +55,7 @@ function showModule(module) {
             moduleTitle = 'Algèbre 2';
             moduleContent = `
                 <p>Les Espaces Vectoriels. <a href="https://elearn.univ-tlemcen.dz/pluginfile.php/118248/mod_resource/content/1/Cours%20%20TD%20sur%20les%20espaces%20vectoriels.pdf" target="_blank">Télécharger le PDF</a></p>
+                <p>Elementary Linear Algebra by Ron Larson. <a href="https://drive.google.com/file/d/15hLOtdm0Da6ebMNGMeh2oLCIvKF_Oi-_/view?usp=sharing" target="_blank">Télécharger le PDF</a></p>
             `;
             break;
         case 'informatique':
