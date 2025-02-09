@@ -32,7 +32,7 @@ function showModule(module) {
         case 'physique':
             moduleTitle = 'Physique 2';
             moduleContent = `
-                <p>TP: Polycopié de la Partie théorique. <a href="https://drive.google.com/file/d/1jpA4hSCOP2RFy66jnJTTwMQ8vhzEpgD2/view?usp=sharing" target="_blank">Télécharger le PDF</a></p>
+                <p>TP: Polycopié de la Partie théorique IST3-2. <a href="https://drive.google.com/file/d/1jpA4hSCOP2RFy66jnJTTwMQ8vhzEpgD2/view?usp=sharing" target="_blank">Télécharger le PDF</a></p>
                 <p>TP: Réponses de la Préparation théorique. <a href="https://drive.google.com/file/d/1VvFtFrJfyRPbAPANSMmdjeqmanvW7Mpj/view?usp=sharing" target="_blank">Télécharger le PDF</a></p>
                 <p>Éléctrostatique. <a href="https://ing-st.univ-batna2.dz/sites/default/files/ing-st/files/cours-p2-electricite-et-magnetisme.pdf" target="_blank">Télécharger le PDF</a></p>
             `;
