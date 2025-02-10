@@ -34,8 +34,8 @@ function showModule(module) {
             moduleContent = `
                 <p>TP: Polycopié de la Partie théorique IST3-2. <a href="https://drive.google.com/file/d/1jpA4hSCOP2RFy66jnJTTwMQ8vhzEpgD2/view?usp=sharing" target="_blank">Télécharger le PDF</a></p>
                 <p>TP: Réponses de la Préparation théorique. <a href="https://drive.google.com/file/d/1VvFtFrJfyRPbAPANSMmdjeqmanvW7Mpj/view?usp=sharing" target="_blank">Télécharger le PDF</a></p>
+                <p>Électricité: Tout ce dont vous avez besoin est ici. <a href="https://drive.google.com/drive/folders/1BN4rPvtbQCwolPk-ZtrTdtlWNsrsDXoB" target="_blank">Télécharger le PDF</a></p>
                 <p>Éléctrostatique. <a href="https://ing-st.univ-batna2.dz/sites/default/files/ing-st/files/cours-p2-electricite-et-magnetisme.pdf" target="_blank">Télécharger le PDF</a></p>
-                <p>Électricité. <a href="https://drive.google.com/drive/folders/1BN4rPvtbQCwolPk-ZtrTdtlWNsrsDXoB" target="_blank">Télécharger le PDF</a></p>
             `;
             break;
         case 'chimie':
