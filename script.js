@@ -42,6 +42,7 @@ function showModule(module) {
             moduleTitle = 'Chimie 2';
             moduleContent = `
                 <p>TP: Polycopié. <a href="https://drive.google.com/file/d/1UXLvKPdFmTW6Kj1HPWsRJBgSyCb39g6G/view" target="_blank">Télécharger le PDF</a></p>
+                <p>TP: Préparation N°1 ~ Lois des gaz parfaits. <a href="https://drive.google.com/file/d/1SIvykRpZYuOAF02SdEjfx03XWh-26UZk/view?usp=sharing" target="_blank">Télécharger le PDF</a></p>
                 <p>Constituants de la matière et radioactivité. <a href="https://drive.google.com/file/d/1G1DaWyGKzKHxbJLxQq0sXzRM0b2Uh4Cg/view?usp=sharing" target="_blank">Télécharger le PDF</a></p>
                 <p>Cours de Thermodynamique. <a href="https://www.univ-usto.dz/images/coursenligne/Cours_thermodynamique_SAKER.pdf" target="_blank">Télécharger le PDF</a></p>
             `;
