@@ -32,8 +32,8 @@ function showModule(module) {
         case 'physique':
             moduleTitle = 'Physique 2';
             moduleContent = `
-                <p>TP: Physique - Theorique (22/02/2025). <a href="https://elearning.univ-bejaia.dz/pluginfile.php/1375291/mod_resource/content/2/ING_TP_Physique%202_Th%C3%A9orie_03-02-2025.pdf" target="_blank">Télécharger le PDF</a></p>
-                <p>TP: Physique - Fiches de mesures (22/02/2025). <a href="https://elearning.univ-bejaia.dz/pluginfile.php/1375291/mod_resource/content/2/ING_TP_Physique%202_Th%C3%A9orie_03-02-2025.pdf" target="_blank">Télécharger le PDF</a></p>
+                <p>TP: Polycopié Theorique. (22/02/2025)<a href="https://elearning.univ-bejaia.dz/pluginfile.php/1375291/mod_resource/content/2/ING_TP_Physique%202_Th%C3%A9orie_03-02-2025.pdf" target="_blank">Télécharger le PDF</a></p>
+                <p>TP: Fiches de Mesures. (22/02/2025)<a href="https://elearning.univ-bejaia.dz/pluginfile.php/1375291/mod_resource/content/2/ING_TP_Physique%202_Th%C3%A9orie_03-02-2025.pdf" target="_blank">Télécharger le PDF</a></p>
                 <p>Électricité: Tout ce dont vous avez besoin est ici. <a href="https://drive.google.com/drive/folders/1BN4rPvtbQCwolPk-ZtrTdtlWNsrsDXoB" target="_blank">Télécharger le PDF</a></p>
                 <p>Éléctrostatique. <a href="https://ing-st.univ-batna2.dz/sites/default/files/ing-st/files/cours-p2-electricite-et-magnetisme.pdf" target="_blank">Télécharger le PDF</a></p>
             `;
