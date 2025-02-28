@@ -83,7 +83,7 @@ function showModule(module) {
         case 'dessin':
             moduleTitle = 'Dessin Technique';
             moduleContent = `
-                <p>Chapitre I - Généralités sur le Dessin Technique. <a href="https://elearning.univ-bejaia.dz/pluginfile.php/1380683/mod_resource/content/1/Chapitre%20I%20g%C3%A9n%C3%A9ralit%C3%A9s%20sur%20le%20dessin%20technique.pdf" target="_blank">Télécharger le PDF</a></p>
+                <p>Chapitre I - Généralités sur le Dessin Technique. <a href="https://drive.google.com/file/d/1OqM1OpzC1q1pz5rqOGoawIzB7Efo3j6a/view?usp=sharing" target="_blank">Télécharger le PDF</a></p>
             `;
             break;
         default:
