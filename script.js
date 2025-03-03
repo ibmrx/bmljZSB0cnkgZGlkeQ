@@ -26,6 +26,7 @@ function showModule(module) {
             moduleTitle = 'Affichage';
             moduleContent = `
                 <p>Emploi de Temps. <a href="https://elearning.univ-bejaia.dz/pluginfile.php/1372416/mod_resource/content/2/EDT-ST_ING_%20S2-24-25_ING%20TM.pdf" target="_blank">Télécharger le PDF</a></p>
+                <p>Devoir Maison Analyse 2. <a href="https://drive.google.com/file/d/1xwTUkLiFp3q4q9JcB2yc2ZU6Sxs_kazy/view?usp=sharing" target="_blank">Télécharger le PDF</a></p>
             `;
             break;
         
