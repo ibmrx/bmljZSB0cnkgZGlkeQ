@@ -44,7 +44,7 @@ function showModule(module) {
                 <p>TP: Polycopié. <a href="https://drive.google.com/file/d/1UXLvKPdFmTW6Kj1HPWsRJBgSyCb39g6G/view" target="_blank">Télécharger le PDF</a></p>
                 <p>Constituants de la matière et radioactivité. <a href="https://drive.google.com/file/d/1G1DaWyGKzKHxbJLxQq0sXzRM0b2Uh4Cg/view?usp=sharing" target="_blank">Télécharger le PDF</a></p>
                 <p>Cours de Thermodynamique. <a href="https://www.univ-usto.dz/images/coursenligne/Cours_thermodynamique_SAKER.pdf" target="_blank">Télécharger le PDF</a></p>
-                <p>Résume: Thermodynamique ~ @0x1ie <a href="https://drive.google.com/file/d/1YAsEAnKM7Kn29_nc0AnrzNulpWzTK4Gx/view?usp=drive_link" target="_blank">Télécharger le PDF</a></p>
+                <p>Résume: Thermodynamique. <a href="https://drive.google.com/file/d/1YAsEAnKM7Kn29_nc0AnrzNulpWzTK4Gx/view?usp=drive_link" target="_blank">Télécharger le PDF</a></p>
             `;
             break;
         case 'analyse':
@@ -53,7 +53,7 @@ function showModule(module) {
                 <p>Les Équations Différentielles. <a href="https://drive.google.com/file/d/1sY87T5_9157gzpQGwY55Ks1LeIc219te/view?usp=sharing">Télécharger le PDF</a></p>
                 <p>Intégrales et calcul des Primitives. <a href="https://www.ces-stexupery.be/institut-sainte-marie/espace-interactif/mathematique/vandenbruaenne-andre/prim_integ_new4.pdf" target="_blank">Télécharger le PDF</a></p>
                 <p>Cours et exercices prof Rachid BOUKOUCHA. <a href="https://elearning.univ-bejaia.dz/pluginfile.php/1002586/mod_resource/content/0/Cours_BOUKOUCHA%20Rachid_Cours%20et%20Exercices%20Corrig%C3%A9s%20d%E2%80%99Analyse%20II.pdf" target="_blank">Télécharger le PDF</a></p>
-                <p>Résume: Les régles d'Intégration ~ @0x1ie <a href="https://drive.google.com/file/d/1ge9N-DFBViNtGMPd4LjWrSX3t4hvn6ZN/view?usp=sharing" target="_blank">Télécharger le PDF</a></p>
+                <p>Résume: Les Régles d'Intégration. <a href="https://drive.google.com/file/d/1ge9N-DFBViNtGMPd4LjWrSX3t4hvn6ZN/view?usp=sharing" target="_blank">Télécharger le PDF</a></p>
                 <p>Devoir Maison Analyse 2. <a href="https://drive.google.com/file/d/1xwTUkLiFp3q4q9JcB2yc2ZU6Sxs_kazy/view?usp=sharing" target="_blank">Télécharger le PDF</a></p>
             `;
             break;
@@ -61,7 +61,7 @@ function showModule(module) {
             moduleTitle = 'Algèbre 2';
             moduleContent = `
                 <p>Les Espaces Vectoriels. <a href="https://elearn.univ-tlemcen.dz/pluginfile.php/118248/mod_resource/content/1/Cours%20%20TD%20sur%20les%20espaces%20vectoriels.pdf" target="_blank">Télécharger le PDF</a></p>
-                <p>Résume: Les Espaces Vectoriels ~ @0x1ie <a href="https://drive.google.com/file/d/1TkL7y42sWtXgv9fgHiU1SCz8zoL2CH-c/view?usp=drive_link" target="_blank">Télécharger le PDF</a></p>
+                <p>Résume: Les Espaces Vectoriels. <a href="https://drive.google.com/file/d/1TkL7y42sWtXgv9fgHiU1SCz8zoL2CH-c/view?usp=drive_link" target="_blank">Télécharger le PDF</a></p>
                 <p>Elementary Linear Algebra by Ron Larson. <a href="https://drive.google.com/file/d/15hLOtdm0Da6ebMNGMeh2oLCIvKF_Oi-_/view?usp=sharing" target="_blank">Télécharger le PDF</a></p>
             `;
             break;
