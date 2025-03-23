@@ -28,7 +28,12 @@ function showModule(module) {
                 <p>Emploi de Temps. <a href="https://elearning.univ-bejaia.dz/pluginfile.php/1372416/mod_resource/content/2/EDT-ST_ING_%20S2-24-25_ING%20TM.pdf" target="_blank">Télécharger le PDF</a></p>
             `;
             break;
-        
+        case 'rat':
+            moduleTitle = 'Rattrapage';
+            moduleContent = `
+                <p>Rattrapage: Séries TD et Correction du S1. Cliquer  <a href="https://drive.google.com/drive/folders/1qpxwJkkBPnOPNxRdHuySamBGFTor1ejy?usp=sharing">ici</a></p>
+            `;
+            break;     
         case 'physique':
             moduleTitle = 'Physique 2';
             moduleContent = `
