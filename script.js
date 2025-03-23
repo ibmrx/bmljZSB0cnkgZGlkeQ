@@ -31,7 +31,7 @@ function showModule(module) {
         case 'rat':
             moduleTitle = 'Rattrapage';
             moduleContent = `
-                <p>Rattrapage: Séries TD et Correction du S1. Par <a href="https://drive.google.com/drive/folders/1qpxwJkkBPnOPNxRdHuySamBGFTor1ejy?usp=sharing">ICI</a></p>
+                <p>Rattrapage: Séries TD et Correction du S1. <a href="https://drive.google.com/drive/folders/1qpxwJkkBPnOPNxRdHuySamBGFTor1ejy?usp=sharing">Entrée</a></p>
             `;
             break;     
         case 'physique':
