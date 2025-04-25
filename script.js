@@ -74,6 +74,7 @@ function showModule(module) {
             moduleTitle = 'Programmation';
             moduleContent = `
                 <p>Les Bases Algorithmes de la Programmation en C. <a href="https://drive.google.com/file/d/1mOWFU3CUJrnzMs46Lrz9ha-R55EkZJ6v/view?usp=sharing" target="_blank">Télécharger le PDF</a></p>
+                <p>Les Sous Programmes ~ Mme. Amrane Cylia. <a href="https://drive.google.com/file/d/1E6sN3ZsFePPLWLAqWoOTtlbAjXMzEH-f/view?usp=drive_link" target="_blank">Télécharger le PDF</a></p>
             `;
             break;
         case 'ang':
