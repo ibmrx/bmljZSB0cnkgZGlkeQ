@@ -37,17 +37,14 @@ function showModule(module) {
         case 'physique':
             moduleTitle = 'Physique 2';
             moduleContent = `
-                <p>TP: Polycopié Theorique. (22/02/2025) <a href="https://elearning.univ-bejaia.dz/pluginfile.php/1375291/mod_resource/content/2/ING_TP_Physique%202_Th%C3%A9orie_03-02-2025.pdf" target="_blank">Télécharger le PDF</a></p>
-                <p>TP: Fiches de Mesures. (22/02/2025) <a href="https://elearning.univ-bejaia.dz/pluginfile.php/1375291/mod_resource/content/2/ING_TP_Physique%202_Th%C3%A9orie_03-02-2025.pdf" target="_blank">Télécharger le PDF</a></p>
                 <p>Électricité: Tout ce dont vous avez besoin est ici. <a href="https://drive.google.com/drive/folders/1BN4rPvtbQCwolPk-ZtrTdtlWNsrsDXoB" target="_blank">Télécharger le PDF</a></p>
                 <p>Éléctrostatique. <a href="https://ing-st.univ-batna2.dz/sites/default/files/ing-st/files/cours-p2-electricite-et-magnetisme.pdf" target="_blank">Télécharger le PDF</a></p>
+                <p>Résume: Théorème de Gauss. <a href="https://drive.google.com/file/d/1MO7GOz2SgxDGhkRjab2rVKH_pXRsgRIb/view?usp=sharing" target="_blank">Télécharger le PDF</a></p>
             `;
             break;
         case 'chimie':
             moduleTitle = 'Chimie 2';
             moduleContent = `
-                <p>TP: Polycopié. <a href="https://drive.google.com/file/d/1UXLvKPdFmTW6Kj1HPWsRJBgSyCb39g6G/view" target="_blank">Télécharger le PDF</a></p>
-                <p>Constituants de la matière et radioactivité. <a href="https://drive.google.com/file/d/1G1DaWyGKzKHxbJLxQq0sXzRM0b2Uh4Cg/view?usp=sharing" target="_blank">Télécharger le PDF</a></p>
                 <p>Cours de Thermodynamique. <a href="https://www.univ-usto.dz/images/coursenligne/Cours_thermodynamique_SAKER.pdf" target="_blank">Télécharger le PDF</a></p>
                 <p>Résume: Thermodynamique. <a href="https://drive.google.com/file/d/1YAsEAnKM7Kn29_nc0AnrzNulpWzTK4Gx/view?usp=drive_link" target="_blank">Télécharger le PDF</a></p>
             `;
