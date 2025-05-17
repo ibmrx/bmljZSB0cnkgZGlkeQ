@@ -84,7 +84,7 @@ function showModule(module) {
         case 'metiers':
             moduleTitle = 'Les Métiers de l\'Ingénieur';
             moduleContent = `
-                <p>Les Métiers de l'Ingénieur. <a href="https://ing-st.univ-batna2.dz/sites/default/files/ing-st/files/les_metiers_de_lingenieur.pdf" target="_blank">Télécharger le PDF</a></p>
+                <p>The Engineering Profession. <a href="https://elearning.univ-bejaia.dz/pluginfile.php/1406345/mod_resource/content/1/The%20Engineering%20Profession.pdf" target="_blank">Télécharger le PDF</a></p>
             `;
             break;
         case 'dessin':
