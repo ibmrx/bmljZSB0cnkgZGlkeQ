@@ -178,7 +178,6 @@ function calculateAverage() {
     const algebre_td = parseFloat(document.getElementById('algebre_td').value);
     const algebre_exam = parseFloat(document.getElementById('algebre_exam').value);
     const proba_td = parseFloat(document.getElementById('proba_td').value);
-    const proba_exam = parseFloat(document.getElementById('proba_exam').value);
     const informatique_td = parseFloat(document.getElementById('informatique_td').value);
     const langue_td = parseFloat(document.getElementById('langue_td').value);
     const ded_exam = parseFloat(document.getElementById('ded_exam').value);
@@ -186,7 +185,7 @@ function calculateAverage() {
     const note_chimie = ((chimie_td_tp / 2) * 0.4) + (chimie_exam * 0.6);
     const note_analyse = (analyse_td * 0.4) + (analyse_exam * 0.6);
     const note_algebre = (algebre_td * 0.4) + (algebre_exam * 0.6);
-    const note_proba = (proba_td * 0.4) + (proba_exam * 0.6);
+    const note_proba = proba_td;
     const note_informatique = informatique_td;
     const note_langue = langue_td;
     const note_ded = ded_exam;
@@ -215,7 +214,6 @@ function calculateModuleAverage() {
 
         case 'analyse':
         case 'algebre':
-        case 'proba':
             if (isNaN(moduleTd) || isNaN(moduleExam)) {
                 alert('Veuillez remplir tous les champs pour ce module.');
                 return;
@@ -238,6 +236,14 @@ function calculateModuleAverage() {
                 return;
             }
             moduleAverage = moduleExam * 1;
+            break;
+
+        case 'proba':   
+           if (isNaN(moduleTp)) {
+               alert('Veuillez remplir la note de TP pour ce module.');
+               return;
+            }
+            moduleAverage = moduleTp * 1;
             break;
 
         default:
