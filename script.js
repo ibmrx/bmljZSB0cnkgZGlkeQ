@@ -169,9 +169,11 @@ function calculateAverage() {
         return;
     }
 
-    const physique_td_tp = parseFloat(document.getElementById('physique_td_tp').value);
+    const physique_td = parseFloat(document.getElementById('physique_td').value);
+    const physique_tp = parseFloat(document.getElementById('physique_tp').value);
     const physique_exam = parseFloat(document.getElementById('physique_exam').value);
-    const chimie_td_tp = parseFloat(document.getElementById('chimie_td_tp').value);
+    const chimie_td = parseFloat(document.getElementById('chimie_td').value);
+    const chimie_tp = parseFloat(document.getElementById('chimie_tp').value);
     const chimie_exam = parseFloat(document.getElementById('chimie_exam').value);
     const analyse_td = parseFloat(document.getElementById('analyse_td').value);
     const analyse_exam = parseFloat(document.getElementById('analyse_exam').value);
@@ -181,8 +183,8 @@ function calculateAverage() {
     const informatique_td = parseFloat(document.getElementById('informatique_td').value);
     const langue_td = parseFloat(document.getElementById('langue_td').value);
     const ded_exam = parseFloat(document.getElementById('ded_exam').value);
-    const note_physique = ((physique_td_tp / 2) * 0.4) + (physique_exam * 0.6);
-    const note_chimie = ((chimie_td_tp / 2) * 0.4) + (chimie_exam * 0.6);
+    const note_physique = ((physique_td) * 0.2 + (physique_tp) * 0.2) + (physique_exam * 0.6);
+    const note_chimie = ((chimie_td) * 0.2 + (chimie_tp) * 0.2) + (chimie_exam * 0.6);
     const note_analyse = (analyse_td * 0.4) + (analyse_exam * 0.6);
     const note_algebre = (algebre_td * 0.4) + (algebre_exam * 0.6);
     const note_proba = proba_td;
