@@ -25,7 +25,7 @@ function showModule(module) {
         case 'show':
             moduleTitle = 'Affichage';
             moduleContent = `
-                <p>Emploi de Temps. <a href="https://drive.google.com/file/d/1wCq8m4-85wnbHQk9u7GGIVEXHY_oWnCI/view?usp=sharing" target="_blank">Télécharger le PDF</a></p>
+                <p>Emploi de Temps GM : <a href="https://drive.google.com/file/d/1wCq8m4-85wnbHQk9u7GGIVEXHY_oWnCI/view?usp=sharing" target="_blank">Télécharger le PDF</a></p>
             `;
             break;
         case 'rat':
