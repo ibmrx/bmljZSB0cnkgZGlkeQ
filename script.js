@@ -25,6 +25,7 @@ function showModule(module) {
         case 'show':
             moduleTitle = 'Affichage';
             moduleContent = `
+                <p>Autodesk AutoCAD 2026.1 : Cliquez ici pour le <a href="https://s2.pesk.top/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE3NjcyMjU2MDAsInN1YiI6IkF1dG9kZXNrIEF1dG9DQUQgMjAyNi4xIEJ1aWxkIFcuMTIyLjAuMCBbcGVza3RvcC5jb21dLnJhciIsInNvdXJjZSI6Imh0dHBzOlwvXC9wZXNrdG9wLmNvbVwvIn0.muMY5c5QJZBlu7ud-8ef7LdKTRXFMcxsLibZFZ5cf1s" target="_blank">téléchargement direct</a> & consultez les <a href="https://drive.google.com/file/d/1qo39pRdJAdr4qHxKEwXnwkGdMQyc8zwe/view?usp=sharing" target="_blank">instructions ici</a></p>
                 <p>Emploi de Temps GM : <a href="https://drive.google.com/file/d/1wCq8m4-85wnbHQk9u7GGIVEXHY_oWnCI/view?usp=sharing" target="_blank">Télécharger le PDF</a></p>
                 <p>Emploi de Temps GC : <a href="https://drive.google.com/file/d/1YbMbn7GxomGZmevXYu4GXEOZKhz1grp2/view?usp=sharing" target="_blank">Télécharger le PDF</a></p>
                 <p>Emploi de Temps GP : <a href="https://drive.google.com/file/d/1TeeS5u1pjt4KeSJ3lCwUkRcIwvWY6ddO/view?usp=sharing" target="_blank">Télécharger le PDF</a></p>
