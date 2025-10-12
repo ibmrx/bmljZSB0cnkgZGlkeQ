@@ -50,7 +50,7 @@ function showModule(module) {
                <p>Nothing to show right now.</p>
             `;
             break;
-        case 'analyse':
+        case 'ondes':
             moduleTitle = 'Ondes et vibrations';
             moduleContent = `
                 <p>Nothing to show right now.</p>
