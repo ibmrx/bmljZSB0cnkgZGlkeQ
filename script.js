@@ -59,9 +59,6 @@ function showModule(module) {
         case 'electricite':
             moduleTitle = 'Electricité fondamentale';
             moduleContent = `
-             <p>Chapitre 1 : <a href="https://drive.google.com/file/d/1DporvTUYrD_liIW2TAJrSjeY7ZrqO02q/view?usp=sharing" target="_blank">Télécharger le PDF</a></p>
-             <p>Chapitre 2 : <a href="https://drive.google.com/file/d/1NZEnfswoz9aRs651hizHtKIaWc1HIyZZ/view?usp=sharing" target="_blank">Télécharger le PDF</a></p>
-             <p>Chapitre 3 : <a href="https://drive.google.com/file/d/1c6tW09pXHaG5LcxdWQVsd8JsYmtsQkVx/view?usp=sharing" target="_blank">Télécharger le PDF</a></p>
             `;
             break;
             
