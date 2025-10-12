@@ -59,6 +59,7 @@ function showModule(module) {
         case 'electricite':
             moduleTitle = 'Electricité fondamentale';
             moduleContent = `
+            <p>Nothing to show right now.</p>
             `;
             break;
             
