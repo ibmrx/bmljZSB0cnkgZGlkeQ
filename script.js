@@ -73,7 +73,8 @@ function showModule(module) {
         case 'python':
             moduleTitle = 'Programmation python';
             moduleContent = `
-              <p>Nothing to show right now.</p>
+                <p>Python course : <a href="https://drive.google.com/file/d/1Jw_-kDhFm14csR-ctiiDUFf5CNmfxjYt/view?usp=sharing" target="_blank">Télécharger le PDF</a></p>
+                <p>TP 1 : <a href="https://drive.google.com/file/d/1sJXEzQ5wXjowVP6VQZXv5kIaORXHWUsB/view?usp=sharing" target="_blank">Télécharger le PDF</a></p>
             `;
             break;
         case 'dao':
