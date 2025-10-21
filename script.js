@@ -29,7 +29,6 @@ function showModule(module) {
                 <p>Emploi de Temps GC : <a href="https://drive.google.com/file/d/1YbMbn7GxomGZmevXYu4GXEOZKhz1grp2/view?usp=sharing" target="_blank">Télécharger le PDF</a></p>
                 <p>Emploi de Temps GP : <a href="https://drive.google.com/file/d/1TeeS5u1pjt4KeSJ3lCwUkRcIwvWY6ddO/view?usp=sharing" target="_blank">Télécharger le PDF</a></p>
                 <p>Emploi de Temps ELT : <a href="https://drive.google.com/file/d/1LJ0Lm7rtuCyFcPX4bejWnBKCsCrzQ91v/view?usp=sharing" target="_blank">Télécharger le PDF</a></p>   
-                <p>SolidWorks 2022 SP0 Full Premium Free Full Activated (14.7 GB) : Cliquez ici pour le <a href="https://s2.pesk.top/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE3NjcyMjU2MDAsInN1YiI6IkRTLlNvbGlkV29ya3MuMjAyMi5TUDAuUHJlbWl1bS1TU1EgW1Blc2tUb3AuY29tXS5yYXIiLCJzb3VyY2UiOiJodHRwczpcL1wvcGVza3RvcC5jb21cLyJ9.YFfl5Mf0DPV5r3g65msg6wIyYSnro4yiUgwdvjNwfM8" target="_blank">téléchargement direct</a> & consultez les <a href="https://drive.google.com/file/d/1qo39pRdJAdr4qHxKEwXnwkGdMQyc8zwe/view?usp=sharing" target="_blank">instructions ici</a></p>           
             `;
             break;
         case 'rat':
