@@ -53,7 +53,8 @@ function showModule(module) {
         case 'ondes':
             moduleTitle = 'Ondes et vibrations';
             moduleContent = `
-                <p>Nothing to show right now.</p>
+                <p>Cours : <a href="https://drive.google.com/file/d/1Ps2yyMEaaGxqdW-H3mEreP-dw8p7RC41/view?usp=sharing" target="_blank">Télécharger le PDF</a></p>
+                <p>Résumé de Cours : <a href="https://drive.google.com/file/d/1GUdfgd9s0gsJ6sI8yI0kg4hyVrix3REL/view?usp=sharing" target="_blank">Télécharger le PDF</a></p>
             `;
             break;
         case 'electricite':
@@ -66,7 +67,8 @@ function showModule(module) {
         case 'mecanique':
             moduleTitle = 'Mécanique rationnelle';
             moduleContent = `
-                <p>Nothing to show right now.</p>
+                <p>Cours : <a href="https://drive.google.com/file/d/1d3k5dMqXImrwg49XP1B1kcrXIwq-BQbw/view?usp=drive_link target="_blank">Télécharger le PDF</a></p>
+                <p>Cours et Exercices : <a href="https://drive.google.com/file/d/1rFxPMiFWOq6yvzkOiA7Z_8XR46ZxqwHp/view?usp=drive_link" target="_blank">Télécharger le PDF</a></p>
             `;
             break;            
             
