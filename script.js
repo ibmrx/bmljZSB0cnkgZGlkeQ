@@ -40,7 +40,7 @@ function showModule(module) {
         case 'analyse':
             moduleTitle = 'Analyse 3';
             moduleContent = `
-               <p>Nothing to show right now.</p>
+               <p>Séries numériques : <a href="https://drive.google.com/file/d/1SGkQt3NbdZ8_31aK87-XlSOAM8K9gXy7/view" target="_blank">Télécharger le PDF</a></p>
             `;
             break;
         case 'analysenum':
