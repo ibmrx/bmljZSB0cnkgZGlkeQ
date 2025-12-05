@@ -46,7 +46,8 @@ function showModule(module) {
         case 'analysenum':
             moduleTitle = 'Analyse numérique';
             moduleContent = `
-               <p>Nothing to show right now.</p>
+               <p>Équations Non Linéiares : <a href="https://drive.google.com/file/d/1XJfEw7oADUS2gy708bajkKLQUP8uuJA0/view" target="_blank">Télécharger le PDF</a></p>
+               <p>Systèmes d'Équations Linéaires : <a href="https://drive.google.com/file/d/1Xc3hQJmyedlAVVsOqiTRod1HBYkIGTQC/view" target="_blank">Télécharger le PDF</a></p>
             `;
             break;
         case 'ondes':
