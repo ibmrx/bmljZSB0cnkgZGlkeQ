@@ -65,6 +65,17 @@ function showModule(module) {
                 <p>Exercises Revision sur Chapitre 4 : <a href="https://drive.google.com/file/d/1V-Zu1kzO3BkX4uESpvZyKb-qqUVuSUmh/view" target="_blank">Télécharger le PDF</a></p>
                 <p>Cours de Chapitre 5 : <a href="https://drive.google.com/file/d/1cmVbjB1hNTKbjhsonZ3BclKTvZewRqbg/view" target="_blank">Télécharger le PDF</a></p>
                 <p>Exercises Revision sur Chapitre 5 : <a href="https://drive.google.com/file/d/11GfOZSq21gm-t6S0frO6LkDXRkbH4Vuy/view" target="_blank">Télécharger le PDF</a></p>
+                <p>Interrogation 1-a : <a href="https://drive.google.com/file/d/1e88ms0-w9WboJ37lJFrjNeEMkt6aq7xX/view" target="_blank">Télécharger le PDF</a></p>
+                <p>Interrogation 1-b : <a href="https://drive.google.com/file/d/1cK0RuFHYzwUv3bH3jNyD2cdLd2kp1XII/view" target="_blank">Télécharger le PDF</a></p>
+                <p>Interrogation 2-a : <a href="https://drive.google.com/file/d/1eGSXSGOb2XMrbPEBihmLtTSjKwaMGeBi/view" target="_blank">Télécharger le PDF</a></p>
+                <p>Interrogation 2-b : <a href="https://drive.google.com/file/d/1EjPx5Maz-fN3vvi2nS8Kis9G_VaQD_qE/view" target="_blank">Télécharger le PDF</a></p>
+                <p>Interrogation 2-c : <a href="https://drive.google.com/file/d/1NPVfDmXU4EVzLbYcZJycHFGiqwG8jry1/view" target="_blank">Télécharger le PDF</a></p>
+                <p>Examen 2010 : <a href="https://drive.google.com/file/d/1PZE_1ytL0bKW2ZAqQ31Y6Rn0p5ZTh8K7/view" target="_blank">Télécharger le PDF</a></p>
+                <p>Examen 2012 : <a href="https://drive.google.com/file/d/1P1KDcr2NW5YVK6PR0e8XKBH_v5Ai30Jt/view" target="_blank">Télécharger le PDF</a></p>
+                <p>Examen 2013 (1) : <a href="https://drive.google.com/file/d/1ViHPzNvVkEOw0ZvpaUzmUTmsbu7j2jMC/view" target="_blank">Télécharger le PDF</a></p>
+                <p>Examen 2013 (2) : <a href="https://drive.google.com/file/d/1KtguaCxr5rC1pmbYifOINZHCfz5cauOx/view" target="_blank">Télécharger le PDF</a></p>
+                <p>Rattrapage 2012 : <a href="https://drive.google.com/file/d/1El2RDsIKPcKZo6Rjy3afUXk3P3Vfw9Yg/view" target="_blank">Télécharger le PDF</a></p>
+                <p>Rattrapage 2013 : <a href="https://drive.google.com/file/d/1faUACGvI_oKU1Ec5nEUA9PpSataz5-Zm/view" target="_blank">Télécharger le PDF</a></p>
             `;
             break;
         case 'electricite':
