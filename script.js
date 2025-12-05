@@ -54,6 +54,17 @@ function showModule(module) {
             moduleContent = `
                 <p>Cours : <a href="https://drive.google.com/file/d/1Ps2yyMEaaGxqdW-H3mEreP-dw8p7RC41/view?usp=sharing" target="_blank">Télécharger le PDF</a></p>
                 <p>Résumé de Cours : <a href="https://drive.google.com/file/d/1GUdfgd9s0gsJ6sI8yI0kg4hyVrix3REL/view?usp=sharing" target="_blank">Télécharger le PDF</a></p>
+                <p>Cours de Chapitre 1 : <a href="https://drive.google.com/file/d/16cK5FQZ4UQNA6OMSy1dgG_0vwhHjP26S/view" target="_blank">Télécharger le PDF</a></p>
+                <p>Exercises Revision sur Chapitre 1 : <a href="https://drive.google.com/file/d/13qFKkC9osVZrfG_fuCOsheR5FcIrir-p/view" target="_blank">Télécharger le PDF</a></p>
+                <p>Cours de Chapitre 2 : <a href="https://drive.google.com/file/d/1e1HKrtp1b5VoWbqZfa-NWOT7Xq6su3xM/view" target="_blank">Télécharger le PDF</a></p>
+                <p>Exercises Revision sur Chapitre 2 : <a href="https://drive.google.com/file/d/1ocKMD4PpLHcGqKJdKdc-FAmFDV1aV8c7/view" target="_blank">Télécharger le PDF</a></p>
+                <p>Cours de Chapitre 3-a : <a href="https://drive.google.com/file/d/1EWtJAK9tFbZBqkR7-pnicVhyo6u0Vt6O/view" target="_blank">Télécharger le PDF</a></p>
+                <p>Cours de Chapitre 3-b : <a href="https://drive.google.com/file/d/13_0CQtAdgpO-vL1Ua55J9M6RpObZ-Mxf/view" target="_blank">Télécharger le PDF</a></p>
+                <p>Exercises Revision sur Chapitre 3 : <a href="https://drive.google.com/file/d/1Z3hQwH2bhOj8ZKV9boeWwYEm_C0AfWbN/view" target="_blank">Télécharger le PDF</a></p>
+                <p>Cours de Chapitre 4 : <a href="http://drive.google.com/file/d/1EUSObAGuBIDdfj1QMKLlZSyPQyH6N1Tl/view" target="_blank">Télécharger le PDF</a></p>
+                <p>Exercises Revision sur Chapitre 4 : <a href="https://drive.google.com/file/d/1V-Zu1kzO3BkX4uESpvZyKb-qqUVuSUmh/view" target="_blank">Télécharger le PDF</a></p>
+                <p>Cours de Chapitre 5 : <a href="https://drive.google.com/file/d/1cmVbjB1hNTKbjhsonZ3BclKTvZewRqbg/view" target="_blank">Télécharger le PDF</a></p>
+                <p>Exercises Revision sur Chapitre 5 : <a href="https://drive.google.com/file/d/11GfOZSq21gm-t6S0frO6LkDXRkbH4Vuy/view" target="_blank">Télécharger le PDF</a></p>
             `;
             break;
         case 'electricite':
