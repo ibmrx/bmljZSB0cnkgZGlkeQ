@@ -54,6 +54,7 @@ function showModule(module) {
             moduleContent = `
                 <p>Cours : <a href="https://drive.google.com/file/d/1Ps2yyMEaaGxqdW-H3mEreP-dw8p7RC41/view?usp=sharing" target="_blank">Télécharger le PDF</a></p>
                 <p>Résumé de Cours : <a href="https://drive.google.com/file/d/1GUdfgd9s0gsJ6sI8yI0kg4hyVrix3REL/view?usp=sharing" target="_blank">Télécharger le PDF</a></p>
+                <p>Last update : 05/12/2025</p>
                 <p>Cours de Chapitre 1 : <a href="https://drive.google.com/file/d/16cK5FQZ4UQNA6OMSy1dgG_0vwhHjP26S/view" target="_blank">Télécharger le PDF</a></p>
                 <p>Exercises Revision sur Chapitre 1 : <a href="https://drive.google.com/file/d/13qFKkC9osVZrfG_fuCOsheR5FcIrir-p/view" target="_blank">Télécharger le PDF</a></p>
                 <p>Cours de Chapitre 2 : <a href="https://drive.google.com/file/d/1e1HKrtp1b5VoWbqZfa-NWOT7Xq6su3xM/view" target="_blank">Télécharger le PDF</a></p>
