@@ -221,7 +221,6 @@ function calculateModuleAverage() {
         case 'mm':
         case 'sm':
         case 'rdm':
-        case 'cao':
             if (isNaN(moduleTd) || isNaN(moduleExam)) {
                 alert('Veuillez remplir tous les champs pour ce module.');
                 return;
@@ -237,6 +236,14 @@ function calculateModuleAverage() {
             }
             moduleAverage = (moduleTp * 0.4) + (moduleExam * 0.6);
             break;
+      
+       case 'cao':
+            if (isNaN(moduleTp)) {
+                alert('Veuillez remplir la note de TP pour ce module.');
+                return;
+            }
+            moduleAverage = moduleTp * 1;
+            break;    
 
         default:
             alert('Type de module non reconnu.');
