@@ -34,47 +34,46 @@ function showModule(module) {
             moduleContent = `
               <strong>Analyse 3</strong>
 <hr>
-- <p>Séries numériques : <a href="https://drive.google.com/file/d/1SGkQt3NbdZ8_31aK87-XlSOAM8K9gXy7/view" target="_blank">Télécharger le PDF</a></p>
+<p>Séries numériques : <a href="https://drive.google.com/file/d/1SGkQt3NbdZ8_31aK87-XlSOAM8K9gXy7/view" target="_blank">Télécharger le PDF</a></p>
 
 <strong>Analyse numérique</strong>
 <hr>
-- <p>Équations Non Linéiares : <a href="https://drive.google.com/file/d/1XJfEw7oADUS2gy708bajkKLQUP8uuJA0/view" target="_blank">Télécharger le PDF</a></p>
-- <p>Systèmes d'Équations Linéaires : <a href="https://drive.google.com/file/d/1Xc3hQJmyedlAVVsOqiTRod1HBYkIGTQC/view" target="_blank">Télécharger le PDF</a></p>
+<p>Équations Non Linéiares : <a href="https://drive.google.com/file/d/1XJfEw7oADUS2gy708bajkKLQUP8uuJA0/view" target="_blank">Télécharger le PDF</a></p>
+<p>Systèmes d'Équations Linéaires : <a href="https://drive.google.com/file/d/1Xc3hQJmyedlAVVsOqiTRod1HBYkIGTQC/view" target="_blank">Télécharger le PDF</a></p>
 
 <strong>Ondes et vibrations</strong>
 <hr>
-- <p>Cours de Chapitre 1 : <a href="https://drive.google.com/file/d/16cK5FQZ4UQNA6OMSy1dgG_0vwhHjP26S/view" target="_blank">Télécharger le PDF</a></p>
-- <p>Exercises Revision sur Chapitre 1 : <a href="https://drive.google.com/file/d/13qFKkC9osVZrfG_fuCOsheR5FcIrir-p/view" target="_blank">Télécharger le PDF</a></p>
-- <p>Cours de Chapitre 2 : <a href="https://drive.google.com/file/d/1e1HKrtp1b5VoWbqZfa-NWOT7Xq6su3xM/view" target="_blank">Télécharger le PDF</a></p>
-- <p>Exercises Revision sur Chapitre 2 : <a href="https://drive.google.com/file/d/1ocKMD4PpLHcGqKJdKdc-FAmFDV1aV8c7/view" target="_blank">Télécharger le PDF</a></p>
-- <p>Cours de Chapitre 3-a : <a href="https://drive.google.com/file/d/1EWtJAK9tFbZBqkR7-pnicVhyo6u0Vt6O/view" target="_blank">Télécharger le PDF</a></p>
-- <p>Cours de Chapitre 3-b : <a href="https://drive.google.com/file/d/13_0CQtAdgpO-vL1Ua55J9M6RpObZ-Mxf/view" target="_blank">Télécharger le PDF</a></p>
-- <p>Exercises Revision sur Chapitre 3 : <a href="https://drive.google.com/file/d/1Z3hQwH2bhOj8ZKV9boeWwYEm_C0AfWbN/view" target="_blank">Télécharger le PDF</a></p>
-- <p>Cours de Chapitre 4 : <a href="http://drive.google.com/file/d/1EUSObAGuBIDdfj1QMKLlZSyPQyH6N1Tl/view" target="_blank">Télécharger le PDF</a></p>
-- <p>Exercises Revision sur Chapitre 4 : <a href="https://drive.google.com/file/d/1V-Zu1kzO3BkX4uESpvZyKb-qqUVuSUmh/view" target="_blank">Télécharger le PDF</a></p>
-- <p>Cours de Chapitre 5 : <a href="https://drive.google.com/file/d/1cmVbjB1hNTKbjhsonZ3BclKTvZewRqbg/view" target="_blank">Télécharger le PDF</a></p>
-- <p>Exercises Revision sur Chapitre 5 : <a href="https://drive.google.com/file/d/11GfOZSq21gm-t6S0frO6LkDXRkbH4Vuy/view" target="_blank">Télécharger le PDF</a></p>
-- <p>Interrogation 1-a : <a href="https://drive.google.com/file/d/1e88ms0-w9WboJ37lJFrjNeEMkt6aq7xX/view" target="_blank">Télécharger le PDF</a></p>
-- <p>Interrogation 1-b : <a href="https://drive.google.com/file/d/1cK0RuFHYzwUv3bH3jNyD2cdLd2kp1XII/view" target="_blank">Télécharger le PDF</a></p>
-- <p>Interrogation 2-a : <a href="https://drive.google.com/file/d/1eGSXSGOb2XMrbPEBihmLtTSjKwaMGeBi/view" target="_blank">Télécharger le PDF</a></p>
-- <p>Interrogation 2-b : <a href="https://drive.google.com/file/d/1EjPx5Maz-fN3vvi2nS8Kis9G_VaQD_qE/view" target="_blank">Télécharger le PDF</a></p>
-- <p>Interrogation 2-c : <a href="https://drive.google.com/file/d/1NPVfDmXU4EVzLbYcZJycHFGiqwG8jry1/view" target="_blank">Télécharger le PDF</a></p>
-- <p>Examen 2010 : <a href="https://drive.google.com/file/d/1PZE_1ytL0bKW2ZAqQ31Y6Rn0p5ZTh8K7/view" target="_blank">Télécharger le PDF</a></p>
-- <p>Examen 2012 : <a href="https://drive.google.com/file/d/1P1KDcr2NW5YVK6PR0e8XKBH_v5Ai30Jt/view" target="_blank">Télécharger le PDF</a></p>
-- <p>Examen 2013 (1) : <a href="https://drive.google.com/file/d/1ViHPzNvVkEOw0ZvpaUzmUTmsbu7j2jMC/view" target="_blank">Télécharger le PDF</a></p>
-- <p>Examen 2013 (2) : <a href="https://drive.google.com/file/d/1KtguaCxr5rC1pmbYifOINZHCfz5cauOx/view" target="_blank">Télécharger le PDF</a></p>
-- <p>Rattrapage 2012 : <a href="https://drive.google.com/file/d/1El2RDsIKPcKZo6Rjy3afUXk3P3Vfw9Yg/view" target="_blank">Télécharger le PDF</a></p>
-- <p>Rattrapage 2013 : <a href="https://drive.google.com/file/d/1faUACGvI_oKU1Ec5nEUA9PpSataz5-Zm/view" target="_blank">Télécharger le PDF</a></p>
+<p>Cours de Chapitre 1 : <a href="https://drive.google.com/file/d/16cK5FQZ4UQNA6OMSy1dgG_0vwhHjP26S/view" target="_blank">Télécharger le PDF</a></p>
+<p>Exercises Revision sur Chapitre 1 : <a href="https://drive.google.com/file/d/13qFKkC9osVZrfG_fuCOsheR5FcIrir-p/view" target="_blank">Télécharger le PDF</a></p>
+<p>Cours de Chapitre 2 : <a href="https://drive.google.com/file/d/1e1HKrtp1b5VoWbqZfa-NWOT7Xq6su3xM/view" target="_blank">Télécharger le PDF</a></p>
+<p>Exercises Revision sur Chapitre 2 : <a href="https://drive.google.com/file/d/1ocKMD4PpLHcGqKJdKdc-FAmFDV1aV8c7/view" target="_blank">Télécharger le PDF</a></p>
+<p>Cours de Chapitre 3-a : <a href="https://drive.google.com/file/d/1EWtJAK9tFbZBqkR7-pnicVhyo6u0Vt6O/view" target="_blank">Télécharger le PDF</a></p>
+<p>Cours de Chapitre 3-b : <a href="https://drive.google.com/file/d/13_0CQtAdgpO-vL1Ua55J9M6RpObZ-Mxf/view" target="_blank">Télécharger le PDF</a></p>
+<p>Exercises Revision sur Chapitre 3 : <a href="https://drive.google.com/file/d/1Z3hQwH2bhOj8ZKV9boeWwYEm_C0AfWbN/view" target="_blank">Télécharger le PDF</a></p>
+<p>Cours de Chapitre 4 : <a href="http://drive.google.com/file/d/1EUSObAGuBIDdfj1QMKLlZSyPQyH6N1Tl/view" target="_blank">Télécharger le PDF</a></p>
+<p>Exercises Revision sur Chapitre 4 : <a href="https://drive.google.com/file/d/1V-Zu1kzO3BkX4uESpvZyKb-qqUVuSUmh/view" target="_blank">Télécharger le PDF</a></p>
+<p>Cours de Chapitre 5 : <a href="https://drive.google.com/file/d/1cmVbjB1hNTKbjhsonZ3BclKTvZewRqbg/view" target="_blank">Télécharger le PDF</a></p>
+<p>Exercises Revision sur Chapitre 5 : <a href="https://drive.google.com/file/d/11GfOZSq21gm-t6S0frO6LkDXRkbH4Vuy/view" target="_blank">Télécharger le PDF</a></p>
+<p>Interrogation 1-a : <a href="https://drive.google.com/file/d/1e88ms0-w9WboJ37lJFrjNeEMkt6aq7xX/view" target="_blank">Télécharger le PDF</a></p>
+<p>Interrogation 1-b : <a href="https://drive.google.com/file/d/1cK0RuFHYzwUv3bH3jNyD2cdLd2kp1XII/view" target="_blank">Télécharger le PDF</a></p>
+<p>Interrogation 2-a : <a href="https://drive.google.com/file/d/1eGSXSGOb2XMrbPEBihmLtTSjKwaMGeBi/view" target="_blank">Télécharger le PDF</a></p>
+<p>Interrogation 2-b : <a href="https://drive.google.com/file/d/1EjPx5Maz-fN3vvi2nS8Kis9G_VaQD_qE/view" target="_blank">Télécharger le PDF</a></p>
+<p>Interrogation 2-c : <a href="https://drive.google.com/file/d/1NPVfDmXU4EVzLbYcZJycHFGiqwG8jry1/view" target="_blank">Télécharger le PDF</a></p>
+<p>Examen 2010 : <a href="https://drive.google.com/file/d/1PZE_1ytL0bKW2ZAqQ31Y6Rn0p5ZTh8K7/view" target="_blank">Télécharger le PDF</a></p>
+<p>Examen 2012 : <a href="https://drive.google.com/file/d/1P1KDcr2NW5YVK6PR0e8XKBH_v5Ai30Jt/view" target="_blank">Télécharger le PDF</a></p>
+<p>Examen 2013 (1) : <a href="https://drive.google.com/file/d/1ViHPzNvVkEOw0ZvpaUzmUTmsbu7j2jMC/view" target="_blank">Télécharger le PDF</a></p>
+<p>Examen 2013 (2) : <a href="https://drive.google.com/file/d/1KtguaCxr5rC1pmbYifOINZHCfz5cauOx/view" target="_blank">Télécharger le PDF</a></p>
+<p>Rattrapage 2012 : <a href="https://drive.google.com/file/d/1El2RDsIKPcKZo6Rjy3afUXk3P3Vfw9Yg/view" target="_blank">Télécharger le PDF</a></p>
+<p>Rattrapage 2013 : <a href="https://drive.google.com/file/d/1faUACGvI_oKU1Ec5nEUA9PpSataz5-Zm/view" target="_blank">Télécharger le PDF</a></p>
 
 <strong>Mécanique rationnelle</strong>
 <hr>
-- <p>Cours : <a href="https://drive.google.com/file/d/1d3k5dMqXImrwg49XP1B1kcrXIwq-BQbw/view?usp=drive_link" target="_blank">Télécharger le PDF</a></p>
-- <p>Cours et Exercices : <a href="https://drive.google.com/file/d/1rFxPMiFWOq6yvzkOiA7Z_8XR46ZxqwHp/view?usp=drive_link" target="_blank">Télécharger le PDF</a></p>
+<p>Cours : <a href="https://drive.google.com/file/d/1d3k5dMqXImrwg49XP1B1kcrXIwq-BQbw/view?usp=drive_link" target="_blank">Télécharger le PDF</a></p>
+<p>Cours et Exercices : <a href="https://drive.google.com/file/d/1rFxPMiFWOq6yvzkOiA7Z_8XR46ZxqwHp/view?usp=drive_link" target="_blank">Télécharger le PDF</a></p>
 
 <strong>Programmation python</strong>
 <hr>
-- <p>Python course : <a href="https://drive.google.com/file/d/1sJXEzQ5wXjowVP6VQZXv5kIaORXHWUsB/view?usp=sharing" target="_blank">Télécharger le PDF</a></p>
-- <p>TP-01 : <a href="https://drive.google.com/file/d/1Jw_-kDhFm14csR-ctiiDUFf5CNmfxjYt/view?usp=sharing" target="_blank">Télécharger le PDF</a></p>
+<p>Python course : <a href="https://drive.google.com/file/d/1sJXEzQ5wXjowVP6VQZXv5kIaORXHWUsB/view?usp=sharing" target="_blank">Télécharger le PDF</a></p>
             `;
             break;     
         case 'ctm':
