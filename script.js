@@ -42,15 +42,12 @@ function showModule(module) {
 <p>Équations Non Linéiares : <a href="https://drive.google.com/file/d/1XJfEw7oADUS2gy708bajkKLQUP8uuJA0/view" target="_blank">Télécharger le PDF</a></p>
 <p>Systèmes d'Équations Linéaires : <a href="https://drive.google.com/file/d/1Xc3hQJmyedlAVVsOqiTRod1HBYkIGTQC/view" target="_blank">Télécharger le PDF</a></p>
 <p>Sujet d'examen : <a href="https://drive.google.com/file/d/1sBoZnWtnVUfJW2bsTSTOG133J2JQwgtt/view?usp=sharing" target="_blank">Télécharger le PDF</a></p>
+<p>Playlist YouTube : <a href="https://www.youtube.com/playlist?list=PL_Q9yPllUZUHTvdaJyjQkIvXO4rrdywXQ" target="_blank" style="text-decoration-color: red;">Accès à la playlist</a></p>
 
 <strong>Electricité fondamentale</strong>
 <hr>
 <p>Équations différentielles RC-RL : <a href="https://drive.google.com/file/d/1N-QA3_ytNo5U7B6JHDrkDZHdYuiiS9YJ/view?usp=drive_link" target="_blank">Télécharger le PDF</a></p>
-<p>Playlist YouTube : 
-  <a href="https://www.youtube.com/playlist?list=PLaslJXXX-ksaK68kGxFMIy3m3BZevFm4i" target="_blank">
-    <i class="fab fa-youtube"></i> Accès à la playlist
-  </a>
-</p>
+<p>Playlist YouTube : <a href="https://www.youtube.com/playlist?list=PLaslJXXX-ksaK68kGxFMIy3m3BZevFm4i" target="_blank" style="text-decoration-color: red;">Accès à la playlist</a></p>
 
 <strong>Ondes et vibrations</strong>
 <hr>
@@ -76,12 +73,14 @@ function showModule(module) {
 <p>Examen 2013 (2) : <a href="https://drive.google.com/file/d/1KtguaCxr5rC1pmbYifOINZHCfz5cauOx/view" target="_blank">Télécharger le PDF</a></p>
 <p>Rattrapage 2012 : <a href="https://drive.google.com/file/d/1El2RDsIKPcKZo6Rjy3afUXk3P3Vfw9Yg/view" target="_blank">Télécharger le PDF</a></p>
 <p>Rattrapage 2013 : <a href="https://drive.google.com/file/d/1faUACGvI_oKU1Ec5nEUA9PpSataz5-Zm/view" target="_blank">Télécharger le PDF</a></p>
+<p>Playlist YouTube : <a href="https://www.youtube.com/playlist?list=PLw246VQqLWhJUr8QDv_9l8WUv7BL6WTik" target="_blank" style="text-decoration-color: red;">Accès à la playlist</a></p>
 
 <strong>Mécanique rationnelle</strong>
 <hr>
 <p>Cours : <a href="https://drive.google.com/file/d/1d3k5dMqXImrwg49XP1B1kcrXIwq-BQbw/view?usp=drive_link" target="_blank">Télécharger le PDF</a></p>
 <p>Cours et Exercices : <a href="https://drive.google.com/file/d/1rFxPMiFWOq6yvzkOiA7Z_8XR46ZxqwHp/view?usp=drive_link" target="_blank">Télécharger le PDF</a></p>
 <p>Sujet d'examen et Interrogation : <a href="https://drive.google.com/file/d/1tr1yu_zMvZ7nJjVLwKxgVWlZpVR26wu5/view?usp=sharing" target="_blank">Télécharger le PDF</a></p>
+<p>Playlist YouTube : <a href="https://www.youtube.com/playlist?list=PLXePpKFSUW2ZxGn6VdAPY9d7l7HowWVYL" target="_blank" style="text-decoration-color: red;">Accès à la playlist</a></p>
 
 <strong>Programmation python</strong>
 <hr>
