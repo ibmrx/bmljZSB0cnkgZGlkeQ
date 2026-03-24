@@ -35,17 +35,17 @@ function showModule(module) {
               <strong>Analyse 3</strong>
 <hr>
 <p>Séries numériques : <a href="https://drive.google.com/file/d/1SGkQt3NbdZ8_31aK87-XlSOAM8K9gXy7/view" target="_blank">Télécharger le PDF</a></p>
-<p>Sujet d'examen et Interrogation <a href="https://drive.google.com/file/d/1iflSi1UqEIE3kciVzVx7ijPilpZRWheE/view?usp=sharing" target="_blank">Télécharger le PDF</a></p>
+<p>Sujet d'examen et Interrogation : <a href="https://drive.google.com/file/d/1iflSi1UqEIE3kciVzVx7ijPilpZRWheE/view?usp=sharing" target="_blank">Télécharger le PDF</a></p>
 
 <strong>Analyse numérique</strong>
 <hr>
 <p>Équations Non Linéiares : <a href="https://drive.google.com/file/d/1XJfEw7oADUS2gy708bajkKLQUP8uuJA0/view" target="_blank">Télécharger le PDF</a></p>
 <p>Systèmes d'Équations Linéaires : <a href="https://drive.google.com/file/d/1Xc3hQJmyedlAVVsOqiTRod1HBYkIGTQC/view" target="_blank">Télécharger le PDF</a></p>
-<p>Sujet d'examen <a href="https://drive.google.com/file/d/1sBoZnWtnVUfJW2bsTSTOG133J2JQwgtt/view?usp=sharing" target="_blank">Télécharger le PDF</a></p>
+<p>Sujet d'examen : <a href="https://drive.google.com/file/d/1sBoZnWtnVUfJW2bsTSTOG133J2JQwgtt/view?usp=sharing" target="_blank">Télécharger le PDF</a></p>
 
 <strong>Electricité fondamentale</strong>
 <hr>
-<p>Équations différentielles RC-RL <a href="https://drive.google.com/file/d/1N-QA3_ytNo5U7B6JHDrkDZHdYuiiS9YJ/view?usp=drive_link" target="_blank">Télécharger le PDF</a></p>
+<p>Équations différentielles RC-RL : <a href="https://drive.google.com/file/d/1N-QA3_ytNo5U7B6JHDrkDZHdYuiiS9YJ/view?usp=drive_link" target="_blank">Télécharger le PDF</a></p>
 
 <strong>Ondes et vibrations</strong>
 <hr>
@@ -76,7 +76,7 @@ function showModule(module) {
 <hr>
 <p>Cours : <a href="https://drive.google.com/file/d/1d3k5dMqXImrwg49XP1B1kcrXIwq-BQbw/view?usp=drive_link" target="_blank">Télécharger le PDF</a></p>
 <p>Cours et Exercices : <a href="https://drive.google.com/file/d/1rFxPMiFWOq6yvzkOiA7Z_8XR46ZxqwHp/view?usp=drive_link" target="_blank">Télécharger le PDF</a></p>
-<p>Sujet d'examen et Interrogation <a href="https://drive.google.com/file/d/1tr1yu_zMvZ7nJjVLwKxgVWlZpVR26wu5/view?usp=sharing" target="_blank">Télécharger le PDF</a></p>
+<p>Sujet d'examen et Interrogation : <a href="https://drive.google.com/file/d/1tr1yu_zMvZ7nJjVLwKxgVWlZpVR26wu5/view?usp=sharing" target="_blank">Télécharger le PDF</a></p>
 
 <strong>Programmation python</strong>
 <hr>
