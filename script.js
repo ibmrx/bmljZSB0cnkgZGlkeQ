@@ -80,7 +80,7 @@ function showModule(module) {
 
 <strong>Programmation python</strong>
 <hr>
-<p>Python course : <a href="https://drive.google.com/file/d/1sJXEzQ5wXjowVP6VQZXv5kIaORXHWUsB/view?usp=sharing" target="_blank">Télécharger le PDF</a></p>
+<p>Cours : <a href="https://drive.google.com/file/d/1sJXEzQ5wXjowVP6VQZXv5kIaORXHWUsB/view?usp=sharing" target="_blank">Télécharger le PDF</a></p>
             `;
             break;     
         case 'ctm':
