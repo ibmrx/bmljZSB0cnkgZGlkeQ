@@ -32,7 +32,7 @@ function showModule(module) {
         case 'rat':
             moduleTitle = 'Rattrapage';
             moduleContent = `
-              <strong>Analyse 3</strong>
+<strong>Analyse 3</strong>
 <hr>
 <p>Séries numériques : <a href="https://drive.google.com/file/d/1SGkQt3NbdZ8_31aK87-XlSOAM8K9gXy7/view" target="_blank">Télécharger le PDF</a></p>
 <p>Sujet d'examen et Interrogation : <a href="https://drive.google.com/file/d/1iflSi1UqEIE3kciVzVx7ijPilpZRWheE/view?usp=sharing" target="_blank">Télécharger le PDF</a></p>
@@ -46,6 +46,11 @@ function showModule(module) {
 <strong>Electricité fondamentale</strong>
 <hr>
 <p>Équations différentielles RC-RL : <a href="https://drive.google.com/file/d/1N-QA3_ytNo5U7B6JHDrkDZHdYuiiS9YJ/view?usp=drive_link" target="_blank">Télécharger le PDF</a></p>
+<p>Playlist YouTube : 
+  <a href="https://www.youtube.com/playlist?list=PLaslJXXX-ksaK68kGxFMIy3m3BZevFm4i" target="_blank">
+    <i class="fab fa-youtube"></i> Accès à la playlist
+  </a>
+</p>
 
 <strong>Ondes et vibrations</strong>
 <hr>
