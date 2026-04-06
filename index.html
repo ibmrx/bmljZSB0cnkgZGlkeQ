@@ -9,44 +9,31 @@
     <link rel="apple-touch-icon" sizes="180x180" href="https://uploads.onecompiler.io/437muad7y/43awufw9y/cropped_image.png">
     <link rel="stylesheet" href="styles.css">
     <style>
-        /* Additional styles for the launcher page */
-        .semester-grid {
+        .semester-choice {
             display: flex;
-            flex-direction: column;
-            gap: 15px;
-            align-items: center;
-            margin-top: 20px;
+            gap: 20px;
+            justify-content: center;
+            margin: 20px 0;
         }
-        .semester-btn {
+        .semester-choice button {
             background-color: #173866;
             color: white;
-            padding: 15px 30px;
+            padding: 12px 25px;
             border: none;
             border-radius: 8px;
-            font-size: 1.2rem;
+            font-size: 1rem;
             cursor: pointer;
-            transition: background-color 0.3s ease, transform 0.2s ease;
-            width: 100%;
-            max-width: 250px;
-            text-align: center;
+            transition: background-color 0.3s ease;
         }
-        .semester-btn:hover {
+        .semester-choice button:hover {
             background-color: #1a4a8a;
-            transform: scale(1.02);
         }
-        .coming-soon {
+        .back-to-semester {
+            margin-bottom: 20px;
+        }
+        .back-to-semester button {
             background-color: #6c757d;
-            cursor: not-allowed;
-            opacity: 0.6;
-        }
-        .coming-soon:hover {
-            background-color: #6c757d;
-            transform: none;
-        }
-        .subtitle {
-            text-align: center;
-            color: #173866;
-            margin-top: 10px;
+            padding: 8px 16px;
             font-size: 0.9rem;
         }
     </style>
@@ -70,23 +57,126 @@
     </header>
 
     <main>
-        <h2 style="text-align: center; color: #173866;">Sélectionnez votre Semestre</h2>
-        <p class="subtitle">Choisissez le semestre correspondant à votre année d'étude</p>
-        
-        <div class="semester-grid">
-            <button class="semester-btn coming-soon" disabled>Semestre 1 (Bientôt disponible)</button>
-            <button class="semester-btn coming-soon" disabled>Semestre 2 (Bientôt disponible)</button>
-            <button class="semester-btn" onclick="location.href='S3/index.html'">Semestre 3</button>
-            <button class="semester-btn" onclick="location.href='S4/index.html'">Semestre 4</button>
-            <button class="semester-btn coming-soon" disabled>Semestre 5 (Bientôt disponible)</button>
-            <button class="semester-btn coming-soon" disabled>Semestre 6 (Bientôt disponible)</button>
-            <button class="semester-btn coming-soon" disabled>Semestre 7 (Bientôt disponible)</button>
-            <button class="semester-btn coming-soon" disabled>Semestre 8 (Bientôt disponible)</button>
-        </div>
+        <section id="options">
+            <div class="options-container">
+                <button onclick="showModuleSection()">Espace des Cours</button>
+                <button onclick="showCalculator()">Calculer la Moyenne</button>
+                <button onclick="window.open('https://elearning.univ-bejaia.dz/', '_blank')">Aller sur le site E-Learning</button>
+                <button onclick="showSupport()">Support & Assistance</button>
+            </div>
+        </section>
+
+        <section id="module" style="display:none;">
+            <div id="semesterSelectionModule" class="semester-choice">
+                <h3 style="width:100%; text-align:center;">Choisissez votre semestre</h3>
+                <button onclick="selectModuleSemester('S3')">Semestre 3</button>
+                <button onclick="selectModuleSemester('S4')">Semestre 4</button>
+            </div>
+            <div id="moduleContentArea" style="display:none;">
+                <div class="back-to-semester">
+                    <button onclick="backToSemesterSelection()">← Changer de semestre</button>
+                </div>
+                <h2 id="selectedSemesterTitle"></h2>
+                <p>Si tu as des résumés de cours, contacte-moi sur <a href="https://www.instagram.com/0x1ie">Instagram</a> pour les partager.</p>
+                <div class="form-group">
+                    <label for="year">Année d'étude :</label>
+                    <select id="year">
+                        <option value="1">2ème Année</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="specialty">Filière :</label>
+                    <select id="specialty">
+                        <option value="Ing">TM & ST Ingénieur</option>
+                    </select>
+                </div>
+                <div class="options-container" id="moduleoptions"></div>
+                <div id="moduleContent" style="display:none;"></div>
+            </div>
+        </section>
+
+        <section id="calculator" style="display:none;">
+            <div id="semesterSelectionCalculator" class="semester-choice">
+                <h3 style="width:100%; text-align:center;">Choisissez votre semestre</h3>
+                <button onclick="selectCalculatorSemester('S3')">Semestre 3</button>
+                <button onclick="selectCalculatorSemester('S4')">Semestre 4</button>
+            </div>
+            <div id="calculatorContentArea" style="display:none;">
+                <div class="back-to-semester">
+                    <button onclick="backToCalculatorSemesterSelection()">← Changer de semestre</button>
+                </div>
+                <h2>Calculer la Moyenne</h2>
+                <div class="options-container" id="calculatorOptions">
+                    <button onclick="showSemesterCalculator()">Calculer la moyenne du semestre</button>
+                    <button onclick="showModuleCalculator()">Calculer la moyenne d'un module</button>
+                </div>
+                <form id="semesterForm" style="display:none;"></form>
+                <form id="moduleForm" style="display:none;">
+                    <h2>Calculer la moyenne d'un module</h2>
+                    <div class="form-group">
+                        <label for="moduleSelect">Choisissez un module :</label>
+                        <select id="moduleSelect"></select>
+                    </div>
+                    <div class="module">
+                        <label for="module_td">TD : <small>(Laisser le vide si le module n'a pas un TD)</small></label>
+                        <input type="number" id="module_td" min="0" max="20">
+                        <label for="module_tp">TP : <small>(Laisser le vide si le module n'a pas un TP)</small></label>
+                        <input type="number" id="module_tp" min="0" max="20">
+                        <label for="module_exam">Examen : <small>(Laisser le vide s'il n'a pas un examen)</small></label>
+                        <input type="number" id="module_exam" min="0" max="20">
+                    </div>
+                    <button type="button" onclick="calculateModuleAverage()">Calculer la moyenne du module</button>
+                    <p id="moduleResult">Votre moyenne du module est: <span id="moduleaverageResult">0.00</span></p>
+                    <button type="button" onclick="goBackInCalculator()" class="return-button top-return-button">Retour</button>
+                    <button type="button" onclick="goBackToMainMenu()" class="return-button top-return-button">Menu Principal</button>
+                </form>
+            </div>
+        </section>
+
+        <section id="support" style="display:none;">
+            <h2>Support & Assistance</h2>
+            <p>Pour toute question ou assistance, n'hésitez pas à contacter le développeur :</p>
+            <div class="support-container" style="font-family: Arial, sans-serif;">
+                <div class="support-item" style="margin-bottom: 10px;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: middle; margin-right: 6px; color:#FF0000;">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <line x1="2" y1="12" x2="22" y2="12"></line>
+                        <path d="M12 2a15 15 0 0 1 0 20a15 15 0 0 1 0-20"></path>
+                    </svg>
+                    <span><a href="https://ibmrx.vercel.app/" target="_blank" style="color: white; text-decoration: underline; text-decoration-color: red;">Portfolio</a></span>
+                </div>
+                <div class="support-item" style="margin-bottom: 10px;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: middle; margin-right: 6px; color:#FF0000;">
+                        <path d="M21.5 2.5L2.5 11l5.5 2 2 6 3.5-3 4.5 3 3.5-16.5z"></path>
+                    </svg>
+                    <span><a href="https://t.me/ibmrx" target="_blank" style="color: white; text-decoration: underline; text-decoration-color: red;">Telegram</a></span>
+                </div>
+                <div class="support-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: middle; margin-right: 6px; color:#FF0000;">
+                        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                        <rect x="2" y="9" width="4" height="12"></rect>
+                        <circle cx="4" cy="4" r="2"></circle>
+                    </svg>
+                    <span><a href="https://www.linkedin.com/in/ibmrx" target="_blank" style="color: white; text-decoration: underline; text-decoration-color: red;">LinkedIn</a></span>
+                </div>
+            </div>
+            <p>
+                Soumettez directement vos suggestions, commentaires et questions via ce formulaire en utilisant votre 
+                <b>email universitaire</b>. Votre avis est essentiel pour améliorer la plateforme.
+                <br>
+                👉🏼
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSdAfyRGjc5WLXnZ94f5zzjO_q16cYMReI2SloyCPqiVoChezQ/viewform" target="_blank">
+                    Formulaire de suggestions
+                </a> 👈🏼
+            </p>
+            <button type="button" onclick="goBackToMainMenu()" class="return-button top-return-button">Retour</button>
+        </section>
     </main>
 
     <footer>
         <p>&copy; Université de Béjaïa - جامعة بجاية</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
