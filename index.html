@@ -11,43 +11,69 @@
     <style>
         .semester-choice {
             display: flex;
-            gap: 25px;
-            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
             margin: 20px 0;
-            flex-wrap: wrap;
+        }
+        .semester-choice h3 {
+            text-align: center;
+            color: #173866;
+            margin-bottom: 10px;
         }
         .semester-choice button {
             background-color: #173866;
             color: white;
-            padding: 18px 40px;
+            padding: 15px 20px;
             border: none;
-            border-radius: 12px;
-            font-size: 1.3rem;
-            font-weight: bold;
+            border-radius: 5px;
+            font-size: 1rem;
             cursor: pointer;
             transition: background-color 0.3s ease, transform 0.2s ease;
-            min-width: 200px;
+            width: 100%;
+            max-width: 300px;
+            text-align: center;
         }
         .semester-choice button:hover {
             background-color: #1a4a8a;
             transform: scale(1.02);
         }
+        .return-semester-btn {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .return-semester-btn button {
+            background-color: #173866;
+            color: white;
+            padding: 15px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            width: 100%;
+            max-width: 300px;
+            text-align: center;
+        }
+        .return-semester-btn button:hover {
+            background-color: #1a4a8a;
+        }
         .back-to-semester {
             margin-bottom: 20px;
             text-align: center;
         }
-        .back-to-semester button, .return-from-semester {
-            background-color: #6c757d;
+        .back-to-semester button {
+            background-color: #173866;
+            color: white;
             padding: 12px 25px;
-            font-size: 1rem;
-            border-radius: 8px;
+            border: none;
+            border-radius: 5px;
+            font-size: 0.9rem;
+            cursor: pointer;
         }
-        .back-to-semester button:hover, .return-from-semester:hover {
-            background-color: #5a6268;
-        }
-        .return-semester-btn {
-            margin-top: 20px;
-            text-align: center;
+        .back-to-semester button:hover {
+            background-color: #1a4a8a;
         }
     </style>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-KJ70VFL0P5"></script>
@@ -82,12 +108,12 @@
         <section id="module" style="display:none;">
             <div id="semesterSelectionModule">
                 <div class="semester-choice">
-                    <h3 style="width:100%; text-align:center; color:#173866;">Choisissez votre semestre</h3>
+                    <h3>Choisissez votre semestre</h3>
                     <button onclick="selectModuleSemester('S3')">Semestre 3</button>
                     <button onclick="selectModuleSemester('S4')">Semestre 4</button>
                 </div>
                 <div class="return-semester-btn">
-                    <button onclick="goBackToMainMenu()" class="return-from-semester">← Retour au Menu Principal</button>
+                    <button onclick="goBackToMainMenu()">← Retour au Menu Principal</button>
                 </div>
             </div>
             <div id="moduleContentArea" style="display:none;">
@@ -116,12 +142,12 @@
         <section id="calculator" style="display:none;">
             <div id="semesterSelectionCalculator">
                 <div class="semester-choice">
-                    <h3 style="width:100%; text-align:center; color:#173866;">Choisissez votre semestre</h3>
+                    <h3>Choisissez votre semestre</h3>
                     <button onclick="selectCalculatorSemester('S3')">Semestre 3</button>
                     <button onclick="selectCalculatorSemester('S4')">Semestre 4</button>
                 </div>
                 <div class="return-semester-btn">
-                    <button onclick="goBackToMainMenu()" class="return-from-semester">← Retour au Menu Principal</button>
+                    <button onclick="goBackToMainMenu()">← Retour au Menu Principal</button>
                 </div>
             </div>
             <div id="calculatorContentArea" style="display:none;">
