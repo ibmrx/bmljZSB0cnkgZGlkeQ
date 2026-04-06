@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plateforme des Ingénieurs TM & ST – Université de Bejaia</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="https://uploads.onecompiler.io/437muad7y/43awufw9y/cropped_image.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="https://uploads.onecompiler.io/437muad7y/43awufw9y/cropped_image.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://uploads.onecompiler.io/437muad7y/43awufw9y/cropped_image.png">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Additional styles for the launcher page */
+        .semester-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            align-items: center;
+            margin-top: 20px;
+        }
+        .semester-btn {
+            background-color: #173866;
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 8px;
+            font-size: 1.2rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            width: 100%;
+            max-width: 250px;
+            text-align: center;
+        }
+        .semester-btn:hover {
+            background-color: #1a4a8a;
+            transform: scale(1.02);
+        }
+        .coming-soon {
+            background-color: #6c757d;
+            cursor: not-allowed;
+            opacity: 0.6;
+        }
+        .coming-soon:hover {
+            background-color: #6c757d;
+            transform: none;
+        }
+        .subtitle {
+            text-align: center;
+            color: #173866;
+            margin-top: 10px;
+            font-size: 0.9rem;
+        }
+    </style>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-KJ70VFL0P5"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-KJ70VFL0P5');
+</script>
+</head>
+<body>
+    <div class="logo">
+        <a href="https://www.univ-bejaia.dz/" target="_blank">
+            <img src="https://uploads.onecompiler.io/437muad7y/437mte38t/1583107465007.jpg" alt="Logo de l'Université de Béjaïa" width="150">
+        </a>
+    </div>
+    <header>
+        <h1>Université de Béjaïa</h1>
+        <p>Plateforme pour gérer votre parcours académique et accéder aux ressources éducatives.</p>
+    </header>
+
+    <main>
+        <h2 style="text-align: center; color: #173866;">Sélectionnez votre Semestre</h2>
+        <p class="subtitle">Choisissez le semestre correspondant à votre année d'étude</p>
+        
+        <div class="semester-grid">
+            <button class="semester-btn coming-soon" disabled>Semestre 1 (Bientôt disponible)</button>
+            <button class="semester-btn coming-soon" disabled>Semestre 2 (Bientôt disponible)</button>
+            <button class="semester-btn" onclick="location.href='S3/index.html'">Semestre 3</button>
+            <button class="semester-btn" onclick="location.href='S4/index.html'">Semestre 4</button>
+            <button class="semester-btn coming-soon" disabled>Semestre 5 (Bientôt disponible)</button>
+            <button class="semester-btn coming-soon" disabled>Semestre 6 (Bientôt disponible)</button>
+            <button class="semester-btn coming-soon" disabled>Semestre 7 (Bientôt disponible)</button>
+            <button class="semester-btn coming-soon" disabled>Semestre 8 (Bientôt disponible)</button>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; Université de Béjaïa - جامعة بجاية</p>
+    </footer>
+</body>
+</html>
