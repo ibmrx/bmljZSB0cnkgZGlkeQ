@@ -13,7 +13,7 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            gap: 15px;
+            gap: 10px;
             margin: 20px 0;
         }
         .semester-choice h3 {
@@ -29,18 +29,19 @@
             border-radius: 5px;
             font-size: 1rem;
             cursor: pointer;
-            transition: background-color 0.3s ease, transform 0.2s ease;
+            transition: background-color 0.3s ease;
             width: 100%;
             max-width: 300px;
             text-align: center;
         }
         .semester-choice button:hover {
             background-color: #1a4a8a;
-            transform: scale(1.02);
         }
         .return-semester-btn {
             display: flex;
-            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
             margin-top: 20px;
         }
         .return-semester-btn button {
@@ -51,7 +52,6 @@
             border-radius: 5px;
             font-size: 1rem;
             cursor: pointer;
-            transition: background-color 0.3s ease;
             width: 100%;
             max-width: 300px;
             text-align: center;
@@ -59,20 +59,22 @@
         .return-semester-btn button:hover {
             background-color: #1a4a8a;
         }
-        .back-to-semester {
-            margin-bottom: 20px;
-            text-align: center;
+        .change-semester-btn {
+            margin-top: 10px;
         }
-        .back-to-semester button {
+        .change-semester-btn button {
             background-color: #173866;
             color: white;
-            padding: 12px 25px;
+            padding: 15px 20px;
             border: none;
             border-radius: 5px;
-            font-size: 0.9rem;
+            font-size: 1rem;
             cursor: pointer;
+            width: 100%;
+            max-width: 300px;
+            text-align: center;
         }
-        .back-to-semester button:hover {
+        .change-semester-btn button:hover {
             background-color: #1a4a8a;
         }
     </style>
@@ -117,9 +119,6 @@
                 </div>
             </div>
             <div id="moduleContentArea" style="display:none;">
-                <div class="back-to-semester">
-                    <button onclick="backToSemesterSelection()">← Changer de semestre</button>
-                </div>
                 <h2 id="selectedSemesterTitle"></h2>
                 <p>Si tu as des résumés de cours, contacte-moi sur <a href="https://www.instagram.com/0x1ie">Instagram</a> pour les partager.</p>
                 <div class="form-group">
@@ -136,6 +135,9 @@
                 </div>
                 <div class="options-container" id="moduleoptions"></div>
                 <div id="moduleContent" style="display:none;"></div>
+                <div class="change-semester-btn">
+                    <button onclick="backToSemesterSelection()">← Changer de semestre</button>
+                </div>
             </div>
         </section>
 
@@ -151,9 +153,6 @@
                 </div>
             </div>
             <div id="calculatorContentArea" style="display:none;">
-                <div class="back-to-semester">
-                    <button onclick="backToCalculatorSemesterSelection()">← Changer de semestre</button>
-                </div>
                 <h2>Calculer la Moyenne</h2>
                 <div class="options-container" id="calculatorOptions">
                     <button onclick="showSemesterCalculator()">Calculer la moyenne du semestre</button>
@@ -179,6 +178,9 @@
                     <button type="button" onclick="goBackInCalculator()" class="return-button top-return-button">Retour</button>
                     <button type="button" onclick="goBackToMainMenu()" class="return-button top-return-button">Menu Principal</button>
                 </form>
+                <div class="change-semester-btn">
+                    <button onclick="backToCalculatorSemesterSelection()">← Changer de semestre</button>
+                </div>
             </div>
         </section>
 
