@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plateforme des Ingénieurs TM & ST – Université de Bejaia</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="https://uploads.onecompiler.io/437muad7y/43awufw9y/cropped_image.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="https://uploads.onecompiler.io/437muad7y/43awufw9y/cropped_image.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://uploads.onecompiler.io/437muad7y/43awufw9y/cropped_image.png">
+    <link rel="stylesheet" href="styles.css">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-KJ70VFL0P5"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-KJ70VFL0P5');
+</script>
+</head>
+<body>
+    <div class="logo">
+        <a href="https://www.univ-bejaia.dz/" target="_blank">
+            <img src="https://uploads.onecompiler.io/437muad7y/437mte38t/1583107465007.jpg" alt="Logo de l'Université de Béjaïa" width="150">
+        </a>
+    </div>
+    <header>
+        <h1>Université de Béjaïa</h1>
+        <p>Plateforme pour gérer votre parcours académique et accéder aux ressources éducatives.</p>
+    </header>
+
+    <main>
+        <section id="options">
+            <div class="options-container">
+                <button onclick="showModuleSection()">Espace des Cours</button>
+                <button onclick="showCalculator()">Calculer la Moyenne</button>
+                <button onclick="window.open('https://elearning.univ-bejaia.dz/', '_blank')">Aller sur le site E-Learning</button>
+                <button onclick="showSupport()">Support & Assistance</button>
+            </div>
+        </section>
+
+        <section id="module" style="display:none;">
+    <h2>Sélectionner un Module</h2>
+    <p>Si tu as des résumés de cours, contacte-moi sur <a href="https://www.instagram.com/0x1ie">Instagram</a> pour les partager.</p>
+                <div class="form-group">
+                    <label for="year">Année d'étude :</label>
+                    <select id="year">
+                        <option value="1">2ème Année</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="specialty">Filière :</label>
+                    <select id="specialty">
+                        <option value="Ing">TM & ST Ingénieur</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="semester">Semestre :</label>
+                    <select id="semester">
+                        <option value="1">Semestre 4</option>
+                    </select>
+                </div>
+    <div class="options-container" id="moduleoptions">
+        <p><b>Section d'Affichage :</b></p>
+        <button onclick="showModule('show')">Affichage</button>
+        <p><b>Espace de Rattrapage :</b></p>
+        <button onclick="showModule('rat')">Rattrapage</button>
+        <p><b>Module :</b></p>
+        <button onclick="showModule('ctm')">Construction Mécanique</button>
+        <button onclick="showModule('mdf')">Mécanique des Fluides</button>
+        <button onclick="showModule('rdm')">Résistance des Matériaux</button>
+        <button onclick="showModule('sm')">Structure Métalliques</button>
+        <button onclick="showModule('mat')">Matériaux</button>
+        <button onclick="showModule('mm')">Mesures et Métrologie</button>
+        <button onclick="showModule('ananum')">Analyse Numérique 2</button>
+        <button onclick="showModule('cao')">CAO</button>
+        <button onclick="showModule('tic')">Techniques d’information et de communication</button>
+        <p><b>Aller au menu principal :</b></p>
+        <button type="button" onclick="goBackToMainMenu()" class="return-button top-return-button">Menu Principal</button>   
+    </div>
+    <div id="moduleContent" style="display:none;"></div>
+      
+        </section>
+        <section id="calculator" style="display:none;">
+            <h2>Calculer la Moyenne</h2>
+            <div class="options-container" id="calculatorOptions">
+                <button onclick="showSemesterCalculator()">Calculer la moyenne du semestre</button>
+                <button onclick="showModuleCalculator()">Calculer la moyenne d'un module</button>
+            </div>
+
+            <form id="semesterForm" style="display:none;">
+                <h2>Entrez vos notes</h2>
+                <div class="form-group">
+                    <label for="year">Année d'étude :</label>
+                    <select id="year">
+                        <option value="1">2éme Année</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="specialty">Filière :</label>
+                    <select id="specialty">
+                        <option value="Ing">TM & ST Ingénieur</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="semester">Semestre :</label>
+                    <select id="semester">
+                        <option value="1">Semestre 4</option>
+                    </select>
+                </div>
+
+                <div class="module">
+                    <h3>Construction Mécanique <span style="color:red;">(Coeff: 2)</span></h3>
+                    <label for="ctm_td">TD:</label>
+                    <input type="number" id="ctm_td" min="0" max="20" required>
+                    <label for="ctm_exam">Examen:</label>
+                    <input type="number" id="ctm_exam" min="0" max="20" required>                    
+                </div>
+
+                <div class="module">
+                    <h3>Mécanique des Fluides <span style="color:red;">(Coeff: 3)</span></h3>
+                    <label for="mdf_td">TD:</label>
+                    <input type="number" id="mdf_td" min="0" max="20" required>
+                    <label for="mdf_tp">TP:</label>
+                    <input type="number" id="mdf_tp" min="0" max="20" required>                    
+                    <label for="mdf_exam">Examen:</label>
+                    <input type="number" id="mdf_exam" min="0" max="20" required>
+                </div>
+
+                <div class="module">
+                    <h3>Résistance des Matériaux <span style="color:red;">(Coeff: 2)</span></h3>
+                    <label for="rdm_td">TD:</label>
+                    <input type="number" id="rdm_td" min="0" max="20" required>
+                    <label for="rdm_exam">Examen:</label>
+                    <input type="number" id="rdm_exam" min="0" max="20" required>
+                </div>
+
+                <div class="module">
+                    <h3>Structure Métalliques <span style="color:red;">(Coeff: 2)</span></h3>
+                    <label for="sm_td">TD:</label>
+                    <input type="number" id="sm_td" min="0" max="20" required>
+                    <label for="sm_exam">Examen:</label>
+                    <input type="number" id="sm_exam" min="0" max="20" required>
+                </div>
+
+                <div class="module">
+                    <h3>Matériaux <span style="color:red;">(Coeff: 2)</span></h3>
+                    <label for="mat_td">TD:</label>
+                    <input type="number" id="mat_td" min="0" max="20" required>
+                    <label for="mat_exam">Examen:</label>
+                    <input type="number" id="mat_exam" min="0" max="20" required>                    
+                </div>
+
+                <div class="module">
+                    <h3>Mesures et Métrologie <span style="color:red;">(Coeff: 2)</span></h3>
+                    <label for="mm_tp">TP:</label>
+                    <input type="number" id="mm_tp" min="0" max="20" required>
+                    <label for="mm_exam">Examen:</label>
+                    <input type="number" id="mm_exam" min="0" max="20" required>                    
+                </div>
+
+                <div class="module">
+                    <h3>CAO <span style="color:red;">(Coeff: 2)</span></h3>
+                    <label for="cao_tp">TP:</label>
+                    <input type="number" id="cao_tp" min="0" max="20" required>
+                </div>
+
+                <div class="module">
+                    <h3>Analyse numérique 2 <span style="color:red;">(Coeff: 2)</span></h3>
+                    <label for="ananum_tp">TP:</label>
+                    <input type="number" id="ananum_tp" min="0" max="20" required>                    
+                    <label for="ananum_exam">Examen:</label>
+                    <input type="number" id="ananum_exam" min="0" max="20" required>                    
+                </div>    
+                    
+                <div class="module">
+                    <h3>Techniques d’information et de communication <span style="color:red;">(Coeff: 2)</span></h3>
+                    <label for="tic_tp">TP:</label>
+                    <input type="number" id="tic_tp" min="0" max="20" required>
+                    <label for="tic_exam">Examen:</label>
+                    <input type="number" id="tic_exam" min="0" max="20" required>                    
+                </div>
+
+                <div class="result-container">
+                    <button type="button" onclick="calculateAverage()">Calculer la moyenne</button>
+                    <p id="result">Votre moyenne du semestre est: <span id="averageResult">0.00</span></p>
+                    <button type="button" onclick="goBackToMainMenu()" class="return-button top-return-button">Menu Principal</button>
+                </div>
+            </form>
+
+            <form id="moduleForm" style="display:none;">
+    <h2>Calculer la moyenne d'un module</h2>
+    <div class="form-group">
+        <label for="moduleSelect">Choisissez un module :</label>
+        <select id="moduleSelect">
+            <option value="ctm">Construction Mécanique</option>
+            <option value="mdf">Mécanique des Fluides</option>
+            <option value="rdm">Résistance des Matériaux</option>
+            <option value="sm">Structure Métalliques</option>
+            <option value="mat">Matériaux</option>
+            <option value="mm">Mesures et Métrologie</option>
+            <option value="cao">CAO</option>
+            <option value="ananum">Analyse numérique 2</option>
+            <option value="tic">Techniques d’information et de communication</option>
+        </select>
+    </div>
+
+    <div class="module">
+        <label for="module_td">TD : <small>(Laisser le vide si le module n'a pas un TD)</small></label>
+        <input type="number" id="module_td" min="0" max="20">
+
+        <label for="module_tp">TP : <small>(Laisser le vide si le module n'a pas un TP)</small></label>
+        <input type="number" id="module_tp" min="0" max="20">
+
+        <label for="module_exam">Examen : <small>(Laisser le vide s'il n'a pas un examen)</small></label>
+        <input type="number" id="module_exam" min="0" max="20">
+    </div>
+
+    <button type="button" onclick="calculateModuleAverage()">Calculer la moyenne du module</button>
+    <p id="moduleResult">Votre moyenne du module est: <span id="moduleaverageResult">0.00</span></p>
+    <button type="button" onclick="goBackInCalculator()" class="return-button top-return-button">Retour</button>
+    <button type="button" onclick="goBackToMainMenu()" class="return-button top-return-button">Menu Principal</button>
+            </form>
+        </section>
+
+       <section id="support" style="display:none;">
+  <h2>Support & Assistance</h2>
+  <p>Pour toute question ou assistance, n'hésitez pas à contacter le développeur :</p>
+  
+  <div class="support-container" style="font-family: Arial, sans-serif;">
+    
+ 
+    <div class="support-item" style="margin-bottom: 10px;">
+      <svg xmlns="http://www.w3.org/2000/svg"
+           width="20" height="20" viewBox="0 0 24 24"
+           fill="none" stroke="currentColor" stroke-width="2"
+           stroke-linecap="round" stroke-linejoin="round"
+           style="vertical-align: middle; margin-right: 6px; color:#FF0000;">
+        <circle cx="12" cy="12" r="10"></circle>
+        <line x1="2" y1="12" x2="22" y2="12"></line>
+        <path d="M12 2a15 15 0 0 1 0 20a15 15 0 0 1 0-20"></path>
+      </svg>
+      <span><a href="https://ibmrx.vercel.app/" target="_blank" style="color: white; text-decoration: underline; text-decoration-color: red;">Portfolio</a></span>
+    </div>
+
+
+    <div class="support-item" style="margin-bottom: 10px;">
+      <svg xmlns="http://www.w3.org/2000/svg"
+           width="20" height="20" viewBox="0 0 24 24"
+           fill="none" stroke="currentColor" stroke-width="2"
+           stroke-linecap="round" stroke-linejoin="round"
+           style="vertical-align: middle; margin-right: 6px; color:#FF0000;">
+        <path d="M21.5 2.5L2.5 11l5.5 2 2 6 3.5-3 4.5 3 3.5-16.5z"></path>
+      </svg>
+      <span><a href="https://t.me/ibmrx" target="_blank" style="color: white; text-decoration: underline; text-decoration-color: red;">Telegram</a></span>
+    </div>
+
+
+    <div class="support-item">
+      <svg xmlns="http://www.w3.org/2000/svg"
+           width="20" height="20" viewBox="0 0 24 24"
+           fill="none" stroke="currentColor" stroke-width="2"
+           stroke-linecap="round" stroke-linejoin="round"
+           style="vertical-align: middle; margin-right: 6px; color:#FF0000;">
+        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"></path>
+        <rect x="2" y="9" width="4" height="12"></rect>
+        <circle cx="4" cy="4" r="2"></circle>
+      </svg>
+      <span><a href="https://www.linkedin.com/in/ibmrx" target="_blank" style="color: white; text-decoration: underline; text-decoration-color: red;">LinkedIn</a></span>
+    </div>
+
+  </div>
+
+  <p>
+    Soumettez directement vos suggestions, commentaires et questions via ce formulaire en utilisant votre 
+    <b>email universitaire</b>. Votre avis est essentiel pour améliorer la plateforme.
+    <br>
+    👉🏼
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSdAfyRGjc5WLXnZ94f5zzjO_q16cYMReI2SloyCPqiVoChezQ/viewform" target="_blank">
+      Formulaire de suggestions
+    </a> 👈🏼
+  </p>
+
+  <button type="button" onclick="goBackToMainMenu()" class="return-button top-return-button">
+    Retour
+  </button>
+</section>
+        
+    </main>
+
+    <footer>
+        <p>&copy; Université de Béjaïa - جامعة بجاية</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
