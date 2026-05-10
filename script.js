@@ -101,7 +101,7 @@ function showModule(module) {
 <p>Chapitre 2 : Hydrostatique <a href="https://staff.univ-batna2.dz/sites/default/files/krimil_farida/files/chapitre_2_hg_01.pdf" target="_blank">Télécharger le PDF</a></p>
 <p>Chapitre 3 : Cinématique des fluides <a href="https://staff.univ-batna2.dz/sites/default/files/krimil_farida/files/chap_3docx.pdf" target="_blank">Télécharger le PDF</a></p>
 <p>Chapitre 4 : Dynamique des fluides parfaits <a href="https://staff.univ-batna2.dz/sites/default/files/krimil_farida/files/cha_4_01.pdf" target="_blank">Télécharger le PDF</a></p>
-<p>Résumé chapitre 4 : Dynamique des fluides parfaits <a href="https://staff.univ-batna2.dz/sites/default/files/krimil_farida/files/resume_chap_04chap_05.pdf" target="_blank">Télécharger le PDF</a></p>
+<p>Résumé chapitre 4 et chapitre 5 : Dynamique des fluides parfaits <a href="https://staff.univ-batna2.dz/sites/default/files/krimil_farida/files/resume_chap_04chap_05.pdf" target="_blank">Télécharger le PDF</a></p>
             `;
             break;
         case 'rdm':
