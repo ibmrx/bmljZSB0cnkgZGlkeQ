@@ -97,7 +97,6 @@ function showModule(module) {
             moduleTitle = 'Mécanique des Fluides';
             moduleContent = `
             <p>Chapitre 1 : Propriétés des fluides <a href="https://staff.univ-batna2.dz/sites/default/files/krimil_farida/files/chapitre_i_hg.pdf" target="_blank">Télécharger le PDF</a></p>
-
 <p>Chapitre 2 : Hydrostatique <a href="https://staff.univ-batna2.dz/sites/default/files/krimil_farida/files/chapitre_2_hg_01.pdf" target="_blank">Télécharger le PDF</a></p>
 <p>Chapitre 3 : Cinématique des fluides <a href="https://staff.univ-batna2.dz/sites/default/files/krimil_farida/files/chap_3docx.pdf" target="_blank">Télécharger le PDF</a></p>
 <p>Chapitre 4 : Dynamique des fluides parfaits <a href="https://staff.univ-batna2.dz/sites/default/files/krimil_farida/files/cha_4_01.pdf" target="_blank">Télécharger le PDF</a></p>
@@ -128,7 +127,7 @@ function showModule(module) {
         case 'mm':
             moduleTitle = 'Mesures et Métrologie';
             moduleContent = `
-                <p>Nothing to show right now.</p>
+                <p>Examen avec corrigé <a href="https://fstech.univ-guelma.dz/sites/default/files/corrige%20type%20metrologie.pdf" target="_blank">Télécharger le PDF</a></p>
             `;
             break;
         case 'cao':
