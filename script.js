@@ -127,7 +127,7 @@ function showModule(module) {
         case 'mm':
             moduleTitle = 'Mesures et Métrologie';
             moduleContent = `
-                <p>Examen avec corrigé <a href="https://fstech.univ-guelma.dz/sites/default/files/corrige%20type%20metrologie.pdf" target="_blank">Télécharger le PDF</a></p>
+                <p>Examen avec corrigé : <a href="https://fstech.univ-guelma.dz/sites/default/files/corrige%20type%20metrologie.pdf" target="_blank">Télécharger le PDF</a></p>
             `;
             break;
         case 'cao':
