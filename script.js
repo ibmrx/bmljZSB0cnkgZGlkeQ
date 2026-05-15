@@ -113,7 +113,7 @@ function showModule(module) {
         case 'sm':
             moduleTitle = 'Structure Métalliques';
             moduleContent = `
-            <p>Nothing to show right now.</p>
+            <p>Résumé chapitre 1 : <a href="https://drive.google.com/file/d/1POIQI68fXCVU6u4lpI--0vwzLwfpB9OU/view?usp=sharing" target="_blank">Télécharger le PDF</a></p>
             `;
             break;
             
