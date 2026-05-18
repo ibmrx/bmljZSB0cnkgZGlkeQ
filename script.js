@@ -26,7 +26,15 @@ function showModule(module) {
         case 'show':
             moduleTitle = 'Affichage';
             moduleContent = `
-                <p>Nothing to show right now.</p>
+                <div style="width: fit-content; padding: 20px 45px; border-radius: 14px; background: linear-gradient(135deg, #111827, #1f2937, #000000); border: 2px solid #60a5fa; box-shadow: 0 0 30px rgba(96,165,250,0.35); font-family: 'Segoe UI', sans-serif; text-align: center;">
+    <span style="font-size: 34px; font-weight: 800; letter-spacing: 3px;">
+        <span style="color:#60a5fa;">GOOD</span>
+        <span style="color:#c084fc;">LUCK</span>
+        <span style="color:#f8fafc;">FOR</span>
+        <span style="color:#4ade80;">YOUR</span>
+        <span style="color:#f87171;">EXAMS</span>
+    </span>
+</div>
             `;
             break;
         case 'rat':
