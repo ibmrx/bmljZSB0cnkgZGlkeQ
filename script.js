@@ -90,7 +90,7 @@ function showModule(module) {
         case 'ctm':
             moduleTitle = 'Construction Mécanique';
             moduleContent = `
-               <p>Nothing to show right now.</p>
+               <p>Résumé : <a href="https://drive.google.com/file/d/1ctKCdpnaGoxEv8UMafegp92r_OZfzAsh/view?usp=drive_link" target="_blank">Télécharger le PDF</a></p>
             `;
             break;
         case 'mdf':
