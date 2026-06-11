@@ -300,12 +300,11 @@
                 <button type="button" onclick="goBackToMainMenu()" class="return-button top-return-button">Menu Principal</button>
             `;
         }
-function goBackInOptions() {
-    document.getElementById('options').style.display = 'none';
-    document.getElementById('module').style.display = 'none';
-    document.getElementById('calculator').style.display = 'none';
-    window.location.href = 'index.html';
-}
+        
+        function goBackToSemesters() {
+            window.location.href = 'index.html';
+        }
+        
         function goBackInModule() {
             document.getElementById('moduleContent').style.display = 'none';
             document.getElementById('moduleoptions').style.display = 'block';
