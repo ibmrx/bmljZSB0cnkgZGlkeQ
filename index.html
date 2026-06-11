@@ -15,22 +15,60 @@
         gtag('js', new Date());
         gtag('config', 'G-KJ70VFL0P5');
     </script>
-    <style>
-        .support-container {
+   <style>
+        /* Styles for selection panels - matching main buttons exactly */
+        .selection-panel {
+            text-align: center;
+        }
+        .vertical-buttons {
             display: flex;
             flex-direction: column;
             gap: 12px;
+            align-items: center;
+            width: 100%;
+            margin: 20px 0;
+        }
+        .vertical-buttons button {
+            width: 100%;
+            max-width: 300px;
+            padding: 15px 20px;
+            background-color: #173866;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            margin: 0 auto;
+        }
+        .vertical-buttons button:hover {
+            background-color: #1a4a8a;
+        }
+        .section-title {
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+            color: #173866;
+            text-align: center;
+        }
+        /* Support section - exact same style as original S4 */
+        .support-container {
+            display: flex;
+            flex-direction: column;
+            gap: 7px;
             margin-top: 20px;
             align-items: center;
         }
         .support-item {
-            background-color: #173866;
-            padding: 14px 20px;
-            border-radius: 5px;
-            width: 100%;
-            max-width: 260px;
-            text-align: center;
-            transition: background-color 0.3s ease;
+    background-color: #173866;
+    padding: 14px 20px;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 260px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
         }
         .support-item:hover {
             background-color: #1a4a8a;
