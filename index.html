@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Plateforme des Ingénieurs Techniques</title>
+    <title>Plateforme des Ingénieurs</title>
     <link rel="icon" type="image/png" sizes="32x32" href="https://uploads.onecompiler.io/437muad7y/43awufw9y/cropped_image.png">
     <link rel="icon" type="image/png" sizes="192x192" href="https://uploads.onecompiler.io/437muad7y/43awufw9y/cropped_image.png">
     <link rel="apple-touch-icon" sizes="180x180" href="https://uploads.onecompiler.io/437muad7y/43awufw9y/cropped_image.png">
@@ -16,59 +16,21 @@
         gtag('config', 'G-KJ70VFL0P5');
     </script>
     <style>
-        /* Styles for selection panels - matching main buttons exactly */
-        .selection-panel {
-            text-align: center;
-        }
-        .vertical-buttons {
-            display: flex;
-            flex-direction: column;
-            gap: 12px;
-            align-items: center;
-            width: 100%;
-            margin: 20px 0;
-        }
-        .vertical-buttons button {
-            width: 100%;
-            max-width: 300px;
-            padding: 15px 20px;
-            background-color: #173866;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            font-size: 1rem;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-            margin: 0 auto;
-        }
-        .vertical-buttons button:hover {
-            background-color: #1a4a8a;
-        }
-        .section-title {
-            font-size: 1.5rem;
-            font-weight: bold;
-            margin-bottom: 20px;
-            color: #173866;
-            text-align: center;
-        }
-        /* Support section - exact same style as original S4 */
         .support-container {
             display: flex;
             flex-direction: column;
-            gap: 7px;
+            gap: 12px;
             margin-top: 20px;
             align-items: center;
         }
         .support-item {
-    background-color: #173866;
-    padding: 14px 20px;
-    border-radius: 5px;
-    width: 100%;
-    max-width: 260px;
-    text-align: center;
-    transition: background-color 0.3s ease;
-}
-
+            background-color: #173866;
+            padding: 14px 20px;
+            border-radius: 5px;
+            width: 100%;
+            max-width: 260px;
+            text-align: center;
+            transition: background-color 0.3s ease;
         }
         .support-item:hover {
             background-color: #1a4a8a;
@@ -101,39 +63,15 @@
 
     <main>
         <!-- MAIN MENU -->
-        <section id="mainMenuSection" style="display: block;">
-            <div class="options-container">
-                <button id="showYearsBtn">Année d'études</button>
-                <button onclick="window.open('https://elearning.univ-bejaia.dz/', '_blank')">Aller sur le site E-Learning</button>
-                <button id="showSupportBtn">Support & Assistance</button>
-            </div>
-        </section>
+        <div class="options-container">
+            <button onclick="window.location.href='annee.html'">Année d'études</button>
+            <button onclick="window.open('https://elearning.univ-bejaia.dz/', '_blank')">Aller sur le site E-Learning</button>
+            <button id="showSupportBtn">Support & Assistance</button>
+        </div>
 
-        <!-- PANEL: CHOOSE YEAR (Première année / Deuxième année) - NO BACK BUTTON -->
-        <section id="yearChoiceSection" style="display: none;">
-            <div class="selection-panel">
-                <div class="section-title">Année d'études</div>
-                <div class="vertical-buttons">
-                    <button id="firstYearBtn">Première année</button>
-                    <button id="secondYearBtn">Deuxième année</button>
-                </div>
-            </div>
-        </section>
-
-        <!-- PANEL: CHOOSE SEMESTER (Semestre 3 / Semestre 4) - NO BACK BUTTON -->
-        <section id="semesterChoiceSection" style="display: none;">
-            <div class="selection-panel">
-                <div class="section-title">Choisissez votre semestre</div>
-                <div class="vertical-buttons">
-                    <button id="semester3Btn">Semestre 3</button>
-                    <button id="semester4Btn">Semestre 4</button>
-                </div>
-            </div>
-        </section>
-
-        <!-- SUPPORT PANEL - Original S4 style restored -->
-        <section id="supportSection" style="display: none;">
-            <div class="selection-panel">
+        <!-- SUPPORT PANEL (hidden by default) -->
+        <div id="supportPanel" style="display: none;">
+            <div style="margin-top: 30px;">
                 <h2 style="color:#173866; text-align:center;">Support & Assistance</h2>
                 <p style="text-align:center;">Pour toute question ou assistance, n'hésitez pas à contacter le développeur :</p>
                 
@@ -170,10 +108,10 @@
                 </p>
 
                 <div style="display: flex; justify-content: center; margin-top: 25px;">
-                    <button id="backToMainFromSupportBtn" style="background-color: #173866; color: white; padding: 10px 24px; border: none; border-radius: 5px; cursor: pointer;">Retour au menu principal</button>
+                    <button id="closeSupportBtn" style="background-color: #173866; color: white; padding: 10px 24px; border: none; border-radius: 5px; cursor: pointer;">Retour</button>
                 </div>
             </div>
-        </section>
+        </div>
     </main>
 
     <footer>
@@ -181,79 +119,23 @@
     </footer>
 
     <script>
-        // DOM elements
-        const mainMenu = document.getElementById('mainMenuSection');
-        const yearChoiceDiv = document.getElementById('yearChoiceSection');
-        const semesterChoiceDiv = document.getElementById('semesterChoiceSection');
-        const supportDiv = document.getElementById('supportSection');
-
-        // Buttons
-        const showYearsBtn = document.getElementById('showYearsBtn');
+        const mainMenu = document.querySelector('.options-container');
+        const supportPanel = document.getElementById('supportPanel');
         const showSupportBtn = document.getElementById('showSupportBtn');
-        const firstYearBtn = document.getElementById('firstYearBtn');
-        const secondYearBtn = document.getElementById('secondYearBtn');
-        const semester3Btn = document.getElementById('semester3Btn');
-        const semester4Btn = document.getElementById('semester4Btn');
-        const backToMainFromSupport = document.getElementById('backToMainFromSupportBtn');
+        const closeSupportBtn = document.getElementById('closeSupportBtn');
 
-        // Helper: hide all sections
-        function hideAllSections() {
+        function showSupport() {
             mainMenu.style.display = 'none';
-            yearChoiceDiv.style.display = 'none';
-            semesterChoiceDiv.style.display = 'none';
-            supportDiv.style.display = 'none';
+            supportPanel.style.display = 'block';
         }
 
-        function showMainMenu() {
-            hideAllSections();
-            mainMenu.style.display = 'block';
+        function hideSupport() {
+            mainMenu.style.display = 'flex';
+            supportPanel.style.display = 'none';
         }
 
-        function showYearPanel() {
-            hideAllSections();
-            yearChoiceDiv.style.display = 'block';
-        }
-
-        function showSemesterPanel() {
-            hideAllSections();
-            semesterChoiceDiv.style.display = 'block';
-        }
-
-        function showSupportPanel() {
-            hideAllSections();
-            supportDiv.style.display = 'block';
-        }
-
-        // Redirect to existing semester pages (lowercase s2, s3, s4)
-        function goToS2() {
-            window.location.href = 's2.html';
-        }
-
-        function goToS3() {
-            window.location.href = 's3.html';
-        }
-
-        function goToS4() {
-            window.location.href = 's4.html';
-        }
-
-        // Event listeners for main navigation
-        showYearsBtn.addEventListener('click', showYearPanel);
-        showSupportBtn.addEventListener('click', showSupportPanel);
-
-        // Year panel events
-        firstYearBtn.addEventListener('click', goToS2);
-        secondYearBtn.addEventListener('click', showSemesterPanel);
-
-        // Semester panel events
-        semester3Btn.addEventListener('click', goToS3);
-        semester4Btn.addEventListener('click', goToS4);
-
-        // Support back button
-        backToMainFromSupport.addEventListener('click', showMainMenu);
-
-        // Initialize: show main menu
-        showMainMenu();
+        showSupportBtn.addEventListener('click', showSupport);
+        closeSupportBtn.addEventListener('click', hideSupport);
     </script>
 </body>
 </html>
