@@ -16,26 +16,16 @@
         gtag('js', new Date());
         gtag('config', 'G-KJ70VFL0P5');
     </script>
-    <style>
-        /* Additional minimal styles to ensure the new selection panels 
-           use exactly the same button styling as the main .options-container buttons.
-           No extra layout changes — buttons will be stacked vertically (block).
-           We reuse .options-container for consistency. */
-        .selection-panel-card {
-            background-color: white;
-            border-radius: 10px;
-            padding: 20px;
-            text-align: center;
-            width: 100%;
-        }
-        .options-container-vertical {
+       <style>
+        /* Keep the same exact style as main menu buttons - stacked vertically */
+        .vertical-buttons {
             display: flex;
             flex-direction: column;
             gap: 10px;
             align-items: center;
             width: 100%;
         }
-        .options-container-vertical button {
+        .vertical-buttons button {
             width: 100%;
             max-width: 300px;
             padding: 15px 20px;
@@ -46,13 +36,12 @@
             font-size: 1rem;
             cursor: pointer;
             transition: background-color 0.3s ease, transform 0.2s ease;
-            margin: 0 auto;
         }
-        .options-container-vertical button:hover {
+        .vertical-buttons button:hover {
             background-color: #1a4a8a;
         }
-        .back-button {
-            margin-top: 25px;
+        .back-btn {
+            margin-top: 20px;
             background-color: #173866;
             color: white;
             padding: 10px 20px;
@@ -62,20 +51,18 @@
             cursor: pointer;
             width: 100%;
             max-width: 220px;
-            transition: background-color 0.3s ease;
         }
-        .back-button:hover {
+        .back-btn:hover {
             background-color: #1a4a8a;
         }
         .section-title {
-            font-size: 1.5rem;
+            font-size: 1.3rem;
             font-weight: bold;
             margin-bottom: 20px;
             color: #173866;
+            text-align: center;
         }
-        hr {
-            margin: 20px 0;
-        }
+        /* No extra white background cards - reuse the existing main white background */
     </style>
 </head>
 <body>
