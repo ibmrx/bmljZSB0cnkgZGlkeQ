@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Année d'études - Université de Bejaia</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .selection-panel {
+            text-align: center;
+        }
+        .vertical-buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            align-items: center;
+            width: 100%;
+            margin: 20px 0;
+        }
+        .vertical-buttons button {
+            width: 100%;
+            max-width: 300px;
+            padding: 15px 20px;
+            background-color: #173866;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+        .vertical-buttons button:hover {
+            background-color: #1a4a8a;
+        }
+        .section-title {
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+            color: #173866;
+        }
+    </style>
+</head>
+<body>
+    <div class="logo">
+        <a href="https://www.univ-bejaia.dz/" target="_blank">
+            <img src="https://assets.onecompiler.app/437muad7y/437mte38t/1583107465007.jpg" alt="Logo de l'Université de Béjaïa" width="150">
+        </a>
+    </div>
+    <header>
+        <h1>Université de Béjaïa</h1>
+        <p>Choisissez votre année d'études</p>
+    </header>
+
+    <main>
+        <div class="selection-panel">
+            <div class="section-title">Année d'études</div>
+            <div class="vertical-buttons">
+                <button onclick="window.location.href='s2.html'">Première année</button>
+                <button onclick="window.location.href='semestre.html'">Deuxième année</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026' BEN. MOH-REDA</p>
+    </footer>
+</body>
+</html>
