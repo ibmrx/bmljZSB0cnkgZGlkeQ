@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Plateforme des Ingénieurs – Université de Bejaia</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="https://assets.onecompiler.app/437muad7y/43awufw9y/cropped_image.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="https://assets.onecompiler.app/437muad7y/43awufw9y/cropped_image.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://assets.onecompiler.app/437muad7y/43awufw9y/cropped_image.png">
+    <link rel="stylesheet" href="styles.css">
+    <!-- Google Analytics (existing) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-KJ70VFL0P5"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-KJ70VFL0P5');
+    </script>
+    <style>
+        /* Additional minimal styles to ensure the new selection panels 
+           use exactly the same button styling as the main .options-container buttons.
+           No extra layout changes — buttons will be stacked vertically (block).
+           We reuse .options-container for consistency. */
+        .selection-panel-card {
+            background-color: white;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            width: 100%;
+        }
+        .options-container-vertical {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            align-items: center;
+            width: 100%;
+        }
+        .options-container-vertical button {
+            width: 100%;
+            max-width: 300px;
+            padding: 15px 20px;
+            background-color: #173866;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            margin: 0 auto;
+        }
+        .options-container-vertical button:hover {
+            background-color: #1a4a8a;
+        }
+        .back-button {
+            margin-top: 25px;
+            background-color: #173866;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+            width: 100%;
+            max-width: 220px;
+            transition: background-color 0.3s ease;
+        }
+        .back-button:hover {
+            background-color: #1a4a8a;
+        }
+        .section-title {
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+            color: #173866;
+        }
+        hr {
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="logo">
+        <a href="https://www.univ-bejaia.dz/" target="_blank">
+            <img src="https://assets.onecompiler.app/437muad7y/437mte38t/1583107465007.jpg" alt="Logo de l'Université de Béjaïa" width="150">
+        </a>
+    </div>
+    <header>
+        <h1>Université de Béjaïa</h1>
+        <p>Plateforme pour gérer votre parcours académique et accéder aux ressources éducatives.</p>
+    </header>
+
+    <main>
+        <!-- ======================= MAIN MENU ======================= -->
+        <section id="mainMenuSection" style="display: block;">
+            <div class="options-container">
+                <button id="showYearsBtn">Année d'études</button>
+                <button onclick="window.open('https://elearning.univ-bejaia.dz/', '_blank')">Aller sur le site E-Learning</button>
+                <button id="showSupportBtn">Support & Assistance</button>
+            </div>
+        </section>
+
+        <!-- ======================= PANEL: CHOOSE YEAR (Première année / Deuxième année) - VERTICAL LAYOUT ======================= -->
+        <section id="yearChoiceSection" style="display: none;">
+            <div class="selection-panel-card">
+                <div class="section-title">Année d'études</div>
+                <div class="options-container-vertical">
+                    <button id="firstYearBtn">Première année</button>
+                    <button id="secondYearBtn">Deuxième année</button>
+                </div>
+                <div style="display: flex; justify-content: center; margin-top: 30px;">
+                    <button class="back-button" id="backToMainFromYear">Retour</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- ======================= PANEL: CHOOSE SEMESTER FOR DEUXIÈME ANNÉE (Semestre 3 / Semestre 4) - VERTICAL LAYOUT ======================= -->
+        <section id="semesterChoiceSection" style="display: none;">
+            <div class="selection-panel-card">
+                <div class="section-title">Choisissez votre semestre</div>
+                <div class="options-container-vertical">
+                    <button id="semester3Btn">Semestre 3</button>
+                    <button id="semester4Btn">Semestre 4</button>
+                </div>
+                <div style="display: flex; justify-content: center; margin-top: 30px;">
+                    <button class="back-button" id="backToYearFromSemesterBtn">Retour</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- ======================= SUPPORT PANEL (exactly same style as original, upgraded) ======================= -->
+        <section id="supportSection" style="display: none;">
+            <div class="selection-panel-card">
+                <h2 style="color:#173866;">Support & Assistance</h2>
+                <p>Pour toute question ou assistance, n'hésitez pas à contacter le développeur :</p>
+                <div class="support-container" style="font-family: Arial, sans-serif; margin-top: 20px;">
+                    <div class="support-item" style="margin-bottom: 12px; background-color: #173866; padding: 12px; border-radius: 32px; max-width: 260px; margin: 10px auto;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: middle; margin-right: 6px;">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <line x1="2" y1="12" x2="22" y2="12"></line>
+                            <path d="M12 2a15 15 0 0 1 0 20 15 15 0 0 1 0-20"></path>
+                        </svg>
+                        <span><a href="https://ibmrx.vercel.app/" target="_blank" style="color: white; text-decoration: underline;">Portfolio</a></span>
+                    </div>
+                    <div class="support-item" style="margin-bottom: 12px; background-color: #173866; padding: 12px; border-radius: 32px; max-width: 260px; margin: 10px auto;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: middle; margin-right: 6px;">
+                            <path d="M21.5 2.5L2.5 11l5.5 2 2 6 3.5-3 4.5 3 3.5-16.5z"></path>
+                        </svg>
+                        <span><a href="https://t.me/ibmrx" target="_blank" style="color: white; text-decoration: underline;">Telegram</a></span>
+                    </div>
+                    <div class="support-item" style="margin-bottom: 12px; background-color: #173866; padding: 12px; border-radius: 32px; max-width: 260px; margin: 10px auto;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: middle; margin-right: 6px;">
+                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                            <rect x="2" y="9" width="4" height="12"></rect>
+                            <circle cx="4" cy="4" r="2"></circle>
+                        </svg>
+                        <span><a href="https://www.linkedin.com/in/ibmrx" target="_blank" style="color: white; text-decoration: underline;">LinkedIn</a></span>
+                    </div>
+                </div>
+                <p style="margin-top: 20px;">
+                    Soumettez directement vos suggestions, commentaires et questions via ce formulaire en utilisant votre 
+                    <b>email universitaire</b>. Votre avis est essentiel pour améliorer la plateforme.
+                    <br>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSdAfyRGjc5WLXnZ94f5zzjO_q16cYMReI2SloyCPqiVoChezQ/viewform" target="_blank" style="color: #173866; font-weight: bold;">Formulaire de suggestions</a>
+                </p>
+                <div style="display: flex; justify-content: center; margin-top: 25px;">
+                    <button class="back-button" id="backToMainFromSupportBtn">Retour au menu principal</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026' BEN. MOH-REDA</p>
+    </footer>
+
+    <script>
+        // Get DOM elements
+        const mainMenu = document.getElementById('mainMenuSection');
+        const yearChoiceDiv = document.getElementById('yearChoiceSection');
+        const semesterChoiceDiv = document.getElementById('semesterChoiceSection');
+        const supportDiv = document.getElementById('supportSection');
+
+        // Buttons
+        const showYearsBtn = document.getElementById('showYearsBtn');
+        const showSupportBtn = document.getElementById('showSupportBtn');
+        const firstYearBtn = document.getElementById('firstYearBtn');
+        const secondYearBtn = document.getElementById('secondYearBtn');
+        const semester3Btn = document.getElementById('semester3Btn');
+        const semester4Btn = document.getElementById('semester4Btn');
+        const backToMainFromYear = document.getElementById('backToMainFromYear');
+        const backToYearFromSemester = document.getElementById('backToYearFromSemesterBtn');
+        const backToMainFromSupport = document.getElementById('backToMainFromSupportBtn');
+
+        // Helper: hide all sections
+        function hideAllSections() {
+            mainMenu.style.display = 'none';
+            yearChoiceDiv.style.display = 'none';
+            semesterChoiceDiv.style.display = 'none';
+            supportDiv.style.display = 'none';
+        }
+
+        function showMainMenu() {
+            hideAllSections();
+            mainMenu.style.display = 'block';
+        }
+
+        function showYearPanel() {
+            hideAllSections();
+            yearChoiceDiv.style.display = 'block';
+        }
+
+        function showSemesterPanel() {
+            hideAllSections();
+            semesterChoiceDiv.style.display = 'block';
+        }
+
+        function showSupportPanel() {
+            hideAllSections();
+            supportDiv.style.display = 'block';
+        }
+
+        // Redirect to existing semester pages (S2, S3, S4)
+        function goToS2() {
+            window.location.href = 'S2.html';
+        }
+
+        function goToS3() {
+            window.location.href = 'S3.html';
+        }
+
+        function goToS4() {
+            window.location.href = 'S4.html';
+        }
+
+        // Event listeners for main navigation
+        showYearsBtn.addEventListener('click', showYearPanel);
+        showSupportBtn.addEventListener('click', showSupportPanel);
+
+        // Year panel events
+        firstYearBtn.addEventListener('click', goToS2);
+        secondYearBtn.addEventListener('click', showSemesterPanel);  // Après "Deuxième année" on affiche le choix S3/S4
+
+        // Semester panel events (S3 and S4)
+        semester3Btn.addEventListener('click', goToS3);
+        semester4Btn.addEventListener('click', goToS4);
+
+        // Back buttons
+        backToMainFromYear.addEventListener('click', showMainMenu);
+        backToYearFromSemester.addEventListener('click', showYearPanel);
+        backToMainFromSupport.addEventListener('click', showMainMenu);
+
+        // Initialize: show main menu
+        showMainMenu();
+    </script>
+</body>
+</html>
