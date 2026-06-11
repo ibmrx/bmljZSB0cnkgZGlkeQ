@@ -97,7 +97,7 @@
                     </select>
                 </div>
                 <div class="module">
-                    <h3>Physique 2</h3>
+                    <h3>Physique 2 <span style="color:red;">(Coeff: 4)</span></h3>
                     <label for="physique_td">TD:</label>
                     <input type="number" id="physique_td" min="0" max="20" required>
                     <label for="physique_tp">TP:</label>
@@ -106,7 +106,7 @@
                     <input type="number" id="physique_exam" min="0" max="20" required>
                 </div>
                 <div class="module">
-                    <h3>Thermodynamique</h3>
+                    <h3>Thermodynamique <span style="color:red;">(Coeff: 4)</span></h3>
                     <label for="chimie_td">TD:</label>
                     <input type="number" id="chimie_td" min="0" max="20" required>
                     <label for="chimie_tp">TP:</label>
@@ -115,36 +115,36 @@
                     <input type="number" id="chimie_exam" min="0" max="20" required>
                 </div>
                 <div class="module">
-                    <h3>Analyse 2</h3>
+                    <h3>Analyse 2 <span style="color:red;">(Coeff: 3)</span></h3>
                     <label for="analyse_td">TD:</label>
                     <input type="number" id="analyse_td" min="0" max="20" required>
                     <label for="analyse_exam">Examen:</label>
                     <input type="number" id="analyse_exam" min="0" max="20" required>
                 </div>
                 <div class="module">
-                    <h3>Algèbre 2</h3>
+                    <h3>Algèbre 2 <span style="color:red;">(Coeff: 2)</span></h3>
                     <label for="algebre_td">TD:</label>
                     <input type="number" id="algebre_td" min="0" max="20" required>
                     <label for="algebre_exam">Examen:</label>
                     <input type="number" id="algebre_exam" min="0" max="20" required>
                 </div>
                 <div class="module">
-                    <h3>Dessine Technique</h3>
+                    <h3>Dessine Technique <span style="color:red;">(Coeff: 2)</span></h3>
                     <label for="proba_td">TP:</label>
                     <input type="number" id="proba_td" min="0" max="20" required>
                 </div>
                 <div class="module">
-                    <h3>Programmation</h3>
+                    <h3>Programmation <span style="color:red;">(Coeff: 2)</span></h3>
                     <label for="informatique_td">TD:</label>
                     <input type="number" id="informatique_td" min="0" max="20" required>
                 </div>
                 <div class="module">
-                    <h3>Langue étrangère (Anglais)</h3>
+                    <h3>Langue étrangère (Anglais) <span style="color:red;">(Coeff: 1)</span></h3>
                     <label for="langue_td">TD:</label>
                     <input type="number" id="langue_td" min="0" max="20" required>
                 </div>
                 <div class="module">
-                    <h3>Les Métiers de l'Ingénieur</h3>
+                    <h3>Les Métiers de l'Ingénieur <span style="color:red;">(Coeff: 1)</span></h3>
                     <label for="ded_exam">Examen:</label>
                     <input type="number" id="ded_exam" min="0" max="20" required>
                 </div>
@@ -172,11 +172,11 @@
                     </select>
                 </div>
                 <div class="module">
-                    <label for="module_td">TD : <small>(Laisser le vide si le module n'a pas un TD)</small></label>
+                    <label for="module_td">TD : <small><span style="color:red;">(Laisser le vide si le module n'a pas un TD)</span></small></label>
                     <input type="number" id="module_td" min="0" max="20">
-                    <label for="module_tp">TP : <small>(Laisser le vide si le module n'a pas un TP)</small></label>
+                    <label for="module_tp">TP : <small><span style="color:red;">(Laisser le vide si le module n'a pas un TP)</span></small></label>
                     <input type="number" id="module_tp" min="0" max="20">
-                    <label for="module_exam">Examen : <small>(Laisser le vide s'il n'a pas un examen)</small></label>
+                    <label for="module_exam">Examen : <small><span style="color:red;">(Laisser le vide si le module n'a pas un examen)</span></small></label>
                     <input type="number" id="module_exam" min="0" max="20">
                 </div>
                 <button type="button" onclick="calculateModuleAverage()">Calculer la moyenne du module</button>
