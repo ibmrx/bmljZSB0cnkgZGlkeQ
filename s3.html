@@ -105,14 +105,14 @@
                     </select>
                 </div>
                 <div class="module">
-                    <h3>Analyse 3</h3>
+                    <h3>Analyse 3 <span style="color:red;">(Coeff: 3)</span></h3>
                     <label for="analyse_td">TD:</label>
                     <input type="number" id="analyse_td" min="0" max="20" required>
                     <label for="analyse_exam">Examen:</label>
                     <input type="number" id="analyse_exam" min="0" max="20" required>                    
                 </div>
                 <div class="module">
-                    <h3>Analyse numérique 1</h3>
+                    <h3>Analyse numérique 1 <span style="color:red;">(Coeff: 3)</span></h3>
                     <label for="analysenum_td">TD:</label>
                     <input type="number" id="analysenum_td" min="0" max="20" required>
                     <label for="analysenum_tp">TP:</label>
@@ -121,7 +121,7 @@
                     <input type="number" id="analysenum_exam" min="0" max="20" required>
                 </div>
                 <div class="module">
-                    <h3>Ondes et vibrations</h3>
+                    <h3>Ondes et vibrations <span style="color:red;">(Coeff: 3)</span></h3>
                     <label for="ondes_td">TD:</label>
                     <input type="number" id="ondes_td" min="0" max="20" required>
                     <label for="ondes_tp">TP:</label>
@@ -130,7 +130,7 @@
                     <input type="number" id="ondes_exam" min="0" max="20" required>
                 </div>
                 <div class="module">
-                    <h3>Electricité fondamentale</h3>
+                    <h3>Electricité fondamentale <span style="color:red;">(Coeff: 3)</span></h3>
                     <label for="electricite_td">TD:</label>
                     <input type="number" id="electricite_td" min="0" max="20" required>
                     <label for="electricite_tp">TP:</label>
@@ -139,31 +139,31 @@
                     <input type="number" id="electricite_exam" min="0" max="20" required>
                 </div>
                 <div class="module">
-                    <h3>Mécanique rationnelle</h3>
+                    <h3>Mécanique rationnelle <span style="color:red;">(Coeff: 2)</span></h3>
                     <label for="mecanique_td">TD:</label>
                     <input type="number" id="mecanique_td" min="0" max="20" required>
                     <label for="mecanique_exam">Examen:</label>
                     <input type="number" id="mecanique_exam" min="0" max="20" required>                    
                 </div>
                 <div class="module">
-                    <h3>Programmation python</h3>
+                    <h3>Programmation python <span style="color:red;">(Coeff: 2)</span></h3>
                     <label for="python_td">TD:</label>
                     <input type="number" id="python_td" min="0" max="20" required>
                     <label for="python_exam">Examen:</label>
                     <input type="number" id="python_exam" min="0" max="20" required>                    
                 </div>
                 <div class="module">
-                    <h3>DAO</h3>
+                    <h3>DAO <span style="color:red;">(Coeff: 1)</span></h3>
                     <label for="dao_td">TD:</label>
                     <input type="number" id="dao_td" min="0" max="20" required>
                 </div>
                 <div class="module">
-                    <h3>Energie et environnement</h3>
+                    <h3>Energie et environnement <span style="color:red;">(Coeff: 1)</span></h3>
                     <label for="env_exam">Examen:</label>
                     <input type="number" id="env_exam" min="0" max="20" required>
                 </div>    
                 <div class="module">
-                    <h3>Matériaux composites</h3>
+                    <h3>Matériaux composites <span style="color:red;">(Coeff: 1)</span></h3>
                     <label for="mat_exam">Examen:</label>
                     <input type="number" id="mat_exam" min="0" max="20" required>                    
                 </div>
@@ -192,11 +192,11 @@
                     </select>
                 </div>
                 <div class="module">
-                    <label for="module_td">TD : <small>(Laisser le vide si le module n'a pas un TD)</small></label>
+                    <label for="module_td">TD : <small><span style="color:red;">(Laisser le vide si le module n'a pas un TD)</span></small></label>
                     <input type="number" id="module_td" min="0" max="20">
-                    <label for="module_tp">TP : <small>(Laisser le vide si le module n'a pas un TP)</small></label>
+                    <label for="module_tp">TP : <small><span style="color:red;">(Laisser le vide si le module n'a pas un TP)</span></small></label>
                     <input type="number" id="module_tp" min="0" max="20">
-                    <label for="module_exam">Examen : <small>(Laisser le vide s'il n'a pas un examen)</small></label>
+                    <label for="module_exam">Examen : <small><span style="color:red;">(Laisser le vide si le module n'a pas un examen)</span></small></label>
                     <input type="number" id="module_exam" min="0" max="20">
                 </div>
                 <button type="button" onclick="calculateModuleAverage()">Calculer la moyenne du module</button>
