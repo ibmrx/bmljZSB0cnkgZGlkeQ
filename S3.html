@@ -3,24 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Plateforme des Ingénieurs TM & ST – Université de Bejaia</title>
-    <link rel="icon" type="image/png" sizes="32x32" href="https://uploads.onecompiler.io/437muad7y/43awufw9y/cropped_image.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="https://uploads.onecompiler.io/437muad7y/43awufw9y/cropped_image.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="https://uploads.onecompiler.io/437muad7y/43awufw9y/cropped_image.png">
+    <title>S3 - Plateforme des Ingénieurs TM & ST – Université de Bejaia</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="https://assets.onecompiler.app/437muad7y/43awufw9y/cropped_image.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="https://assets.onecompiler.app/437muad7y/43awufw9y/cropped_image.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://assets.onecompiler.app/437muad7y/43awufw9y/cropped_image.png">
     <link rel="stylesheet" href="styles.css">
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-KJ70VFL0P5"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-KJ70VFL0P5');
-</script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-KJ70VFL0P5"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-KJ70VFL0P5');
+    </script>
 </head>
 <body>
     <div class="logo">
         <a href="https://www.univ-bejaia.dz/" target="_blank">
-            <img src="https://uploads.onecompiler.io/437muad7y/437mte38t/1583107465007.jpg" alt="Logo de l'Université de Béjaïa" width="150">
+            <img src="https://assets.onecompiler.app/437muad7y/437mte38t/1583107465007.jpg" alt="Logo de l'Université de Béjaïa" width="150">
         </a>
     </div>
     <header>
@@ -33,55 +32,52 @@
             <div class="options-container">
                 <button onclick="showModuleSection()">Espace des Cours</button>
                 <button onclick="showCalculator()">Calculer la Moyenne</button>
-                <button onclick="window.open('https://elearning.univ-bejaia.dz/', '_blank')">Aller sur le site E-Learning</button>
-                <button onclick="showSupport()">Support & Assistance</button>
+                <button onclick="goBackToMainMenu()">Menu Principal</button>
             </div>
         </section>
 
         <section id="module" style="display:none;">
-    <h2>Sélectionner un Module</h2>
-    <p>Si tu as des résumés de cours, contacte-moi sur <a href="https://www.instagram.com/0x1ie">Instagram</a> pour les partager.</p>
-                <div class="form-group">
-                    <label for="year">Année d'étude :</label>
-                    <select id="year">
-                        <option value="1">2ème Année</option>
-                    </select>
-                </div>
-
-                <div class="form-group">
-                    <label for="specialty">Filière :</label>
-                    <select id="specialty">
-                        <option value="Ing">TM & ST Ingénieur</option>
-                    </select>
-                </div>
-
-                <div class="form-group">
-                    <label for="semester">Semestre :</label>
-                    <select id="semester">
-                        <option value="1">Semestre 3</option>
-                    </select>
-                </div>
-    <div class="options-container" id="moduleoptions">
-        <p><b>Section d'Affichage :</b></p>
-        <button onclick="showModule('show')">Affichage</button>
-        <p><b>Espace de Rattrapage :</b></p>
-        <button onclick="showModule('rat')">Rattrapage</button>
-        <p><b>Module :</b></p>
-        <button onclick="showModule('analyse')">Analyse 3</button>
-        <button onclick="showModule('analysenum')">Analyse numérique 1</button>
-        <button onclick="showModule('ondes')">Ondes et vibrations</button>
-        <button onclick="showModule('electricite')">Electricité fondamentale</button>
-        <button onclick="showModule('mecanique')">Mécanique rationnelle</button>
-        <button onclick="showModule('python')">Programmation python</button>
-        <button onclick="showModule('dao')">DAO</button>
-        <button onclick="showModule('env')">Energie et environnement</button>
-        <button onclick="showModule('mat')">Matériaux composites</button>
-        <p><b>Aller au menu principal :</b></p>
-        <button type="button" onclick="goBackToMainMenu()" class="return-button top-return-button">Menu Principal</button>   
-    </div>
-    <div id="moduleContent" style="display:none;"></div>
-      
+            <h2>Sélectionner un Module</h2>
+            <p>Si tu as des résumés de cours, contacte-moi sur <a href="https://www.instagram.com/0x1ie">Instagram</a> pour les partager.</p>
+            <div class="form-group">
+                <label for="year">Année d'étude :</label>
+                <select id="year">
+                    <option value="1">2ème Année</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="specialty">Filière :</label>
+                <select id="specialty">
+                    <option value="Ing">TM & ST Ingénieur</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="semester">Semestre :</label>
+                <select id="semester">
+                    <option value="1">Semestre 3</option>
+                </select>
+            </div>
+            <div class="options-container" id="moduleoptions">
+                <p><b>Section d'Affichage :</b></p>
+                <button onclick="showModule('show')">Affichage</button>
+                <p><b>Espace de Rattrapage :</b></p>
+                <button onclick="showModule('rat')">Rattrapage</button>
+                <p><b>Module :</b></p>
+                <button onclick="showModule('analyse')">Analyse 3</button>
+                <button onclick="showModule('analysenum')">Analyse numérique 1</button>
+                <button onclick="showModule('ondes')">Ondes et vibrations</button>
+                <button onclick="showModule('electricite')">Electricité fondamentale</button>
+                <button onclick="showModule('mecanique')">Mécanique rationnelle</button>
+                <button onclick="showModule('python')">Programmation python</button>
+                <button onclick="showModule('dao')">DAO</button>
+                <button onclick="showModule('env')">Energie et environnement</button>
+                <button onclick="showModule('mat')">Matériaux composites</button>
+                <p><b>Aller au menu principal :</b></p>
+                <button type="button" onclick="goBackToMainMenu()" class="return-button top-return-button">Menu Principal</button>   
+            </div>
+            <div id="moduleContent" style="display:none;"></div>
         </section>
+
         <section id="calculator" style="display:none;">
             <h2>Calculer la Moyenne</h2>
             <div class="options-container" id="calculatorOptions">
@@ -94,24 +90,21 @@
                 <div class="form-group">
                     <label for="year">Année d'étude :</label>
                     <select id="year">
-                        <option value="1">2éme Année</option>
+                        <option value="1">2ème Année</option>
                     </select>
                 </div>
-
                 <div class="form-group">
                     <label for="specialty">Filière :</label>
                     <select id="specialty">
                         <option value="Ing">TM & ST Ingénieur</option>
                     </select>
                 </div>
-
                 <div class="form-group">
                     <label for="semester">Semestre :</label>
                     <select id="semester">
                         <option value="1">Semestre 3</option>
                     </select>
                 </div>
-
                 <div class="module">
                     <h3>Analyse 3</h3>
                     <label for="analyse_td">TD:</label>
@@ -119,7 +112,6 @@
                     <label for="analyse_exam">Examen:</label>
                     <input type="number" id="analyse_exam" min="0" max="20" required>                    
                 </div>
-
                 <div class="module">
                     <h3>Analyse numérique 1</h3>
                     <label for="analysenum_td">TD:</label>
@@ -129,7 +121,6 @@
                     <label for="analysenum_exam">Examen:</label>
                     <input type="number" id="analysenum_exam" min="0" max="20" required>
                 </div>
-
                 <div class="module">
                     <h3>Ondes et vibrations</h3>
                     <label for="ondes_td">TD:</label>
@@ -139,7 +130,6 @@
                     <label for="ondes_exam">Examen:</label>
                     <input type="number" id="ondes_exam" min="0" max="20" required>
                 </div>
-
                 <div class="module">
                     <h3>Electricité fondamentale</h3>
                     <label for="electricite_td">TD:</label>
@@ -149,7 +139,6 @@
                     <label for="electricite_exam">Examen:</label>
                     <input type="number" id="electricite_exam" min="0" max="20" required>
                 </div>
-
                 <div class="module">
                     <h3>Mécanique rationnelle</h3>
                     <label for="mecanique_td">TD:</label>
@@ -157,7 +146,6 @@
                     <label for="mecanique_exam">Examen:</label>
                     <input type="number" id="mecanique_exam" min="0" max="20" required>                    
                 </div>
-
                 <div class="module">
                     <h3>Programmation python</h3>
                     <label for="python_td">TD:</label>
@@ -165,136 +153,315 @@
                     <label for="python_exam">Examen:</label>
                     <input type="number" id="python_exam" min="0" max="20" required>                    
                 </div>
-
                 <div class="module">
                     <h3>DAO</h3>
                     <label for="dao_td">TD:</label>
                     <input type="number" id="dao_td" min="0" max="20" required>
                 </div>
-
                 <div class="module">
                     <h3>Energie et environnement</h3>
                     <label for="env_exam">Examen:</label>
                     <input type="number" id="env_exam" min="0" max="20" required>
                 </div>    
-                    
                 <div class="module">
                     <h3>Matériaux composites</h3>
                     <label for="mat_exam">Examen:</label>
                     <input type="number" id="mat_exam" min="0" max="20" required>                    
                 </div>
-
                 <div class="result-container">
                     <button type="button" onclick="calculateAverage()">Calculer la moyenne</button>
                     <p id="result">Votre moyenne du semestre est: <span id="averageResult">0.00</span></p>
-                    <button type="button" onclick="goBackToMainMenu()" class="return-button top-return-button">Menu Principal</button>
+                    <button type="button" onclick="goBackInCalculator()" class="return-button">Retour</button>
+                    <button type="button" onclick="goBackToMainMenu()" class="return-button">Menu Principal</button>
                 </div>
             </form>
 
             <form id="moduleForm" style="display:none;">
-    <h2>Calculer la moyenne d'un module</h2>
-    <div class="form-group">
-        <label for="moduleSelect">Choisissez un module :</label>
-        <select id="moduleSelect">
-            <option value="analyse">Analyse 3</option>
-            <option value="analysenum">Analyse numérique</option>
-            <option value="ondes">Ondes et vibrations</option>
-            <option value="electricite">Electricité fondamentale</option>
-            <option value="mecanique">Mécanique rationnelle</option>
-            <option value="python">Programmation python</option>
-            <option value="dao">DAO</option>
-            <option value="env">Energie et environnement</option>
-            <option value="mat">Matériaux composites</option>
-        </select>
-    </div>
-
-    <div class="module">
-        <label for="module_td">TD : <small>(Laisser le vide si le module n'a pas un TD)</small></label>
-        <input type="number" id="module_td" min="0" max="20">
-
-        <label for="module_tp">TP : <small>(Laisser le vide si le module n'a pas un TP)</small></label>
-        <input type="number" id="module_tp" min="0" max="20">
-
-        <label for="module_exam">Examen : <small>(Laisser le vide s'il n'a pas un examen)</small></label>
-        <input type="number" id="module_exam" min="0" max="20">
-    </div>
-
-    <button type="button" onclick="calculateModuleAverage()">Calculer la moyenne du module</button>
-    <p id="moduleResult">Votre moyenne du module est: <span id="moduleaverageResult">0.00</span></p>
-    <button type="button" onclick="goBackInCalculator()" class="return-button top-return-button">Retour</button>
-    <button type="button" onclick="goBackToMainMenu()" class="return-button top-return-button">Menu Principal</button>
+                <h2>Calculer la moyenne d'un module</h2>
+                <div class="form-group">
+                    <label for="moduleSelect">Choisissez un module :</label>
+                    <select id="moduleSelect">
+                        <option value="analyse">Analyse 3</option>
+                        <option value="analysenum">Analyse numérique 1</option>
+                        <option value="ondes">Ondes et vibrations</option>
+                        <option value="electricite">Electricité fondamentale</option>
+                        <option value="mecanique">Mécanique rationnelle</option>
+                        <option value="python">Programmation python</option>
+                        <option value="dao">DAO</option>
+                        <option value="env">Energie et environnement</option>
+                        <option value="mat">Matériaux composites</option>
+                    </select>
+                </div>
+                <div class="module">
+                    <label for="module_td">TD : <small>(Laisser le vide si le module n'a pas un TD)</small></label>
+                    <input type="number" id="module_td" min="0" max="20">
+                    <label for="module_tp">TP : <small>(Laisser le vide si le module n'a pas un TP)</small></label>
+                    <input type="number" id="module_tp" min="0" max="20">
+                    <label for="module_exam">Examen : <small>(Laisser le vide s'il n'a pas un examen)</small></label>
+                    <input type="number" id="module_exam" min="0" max="20">
+                </div>
+                <button type="button" onclick="calculateModuleAverage()">Calculer la moyenne du module</button>
+                <p id="moduleResult">Votre moyenne du module est: <span id="moduleaverageResult">0.00</span></p>
+                <button type="button" onclick="goBackInCalculator()" class="return-button">Retour</button>
+                <button type="button" onclick="goBackToMainMenu()" class="return-button">Menu Principal</button>
             </form>
         </section>
-
-       <section id="support" style="display:none;">
-  <h2>Support & Assistance</h2>
-  <p>Pour toute question ou assistance, n'hésitez pas à contacter le développeur :</p>
-  
-  <div class="support-container" style="font-family: Arial, sans-serif;">
-    
- 
-    <div class="support-item" style="margin-bottom: 10px;">
-      <svg xmlns="http://www.w3.org/2000/svg"
-           width="20" height="20" viewBox="0 0 24 24"
-           fill="none" stroke="currentColor" stroke-width="2"
-           stroke-linecap="round" stroke-linejoin="round"
-           style="vertical-align: middle; margin-right: 6px; color:#E1306C;">
-        <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
-        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
-        <line x1="17.5" y1="6.5" x2="17.5" y2="6.5"></line>
-      </svg>
-      <span><a href="https://www.instagram.com/0x1ie" target="_blank">Instagram</a></span>
-    </div>
-
-
-    <div class="support-item" style="margin-bottom: 10px;">
-      <svg xmlns="http://www.w3.org/2000/svg"
-           width="20" height="20" viewBox="0 0 24 24"
-           fill="none" stroke="currentColor" stroke-width="2"
-           stroke-linecap="round" stroke-linejoin="round"
-           style="vertical-align: middle; margin-right: 6px; color:#0088cc;">
-        <path d="M21.5 2.5L2.5 11l5.5 2 2 6 3.5-3 4.5 3 3.5-16.5z"></path>
-      </svg>
-      <span><a href="https://t.me/ibmrx" target="_blank">Telegram</a></span>
-    </div>
-
-
-    <div class="support-item">
-      <svg xmlns="http://www.w3.org/2000/svg"
-           width="20" height="20" viewBox="0 0 24 24"
-           fill="none" stroke="currentColor" stroke-width="2"
-           stroke-linecap="round" stroke-linejoin="round"
-           style="vertical-align: middle; margin-right: 6px; color:#0A66C2;">
-        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"></path>
-        <rect x="2" y="9" width="4" height="12"></rect>
-        <circle cx="4" cy="4" r="2"></circle>
-      </svg>
-      <span><a href="https://www.linkedin.com/in/ibmrx" target="_blank">LinkedIn</a></span>
-    </div>
-
-  </div>
-
-  <p>
-    Soumettez directement vos suggestions, commentaires et questions via ce formulaire en utilisant votre 
-    <b>email universitaire</b>. Votre avis est essentiel pour améliorer la plateforme.
-    <br>
-    👉🏼
-    <a href="https://docs.google.com/forms/d/e/1FAIpQLSdAfyRGjc5WLXnZ94f5zzjO_q16cYMReI2SloyCPqiVoChezQ/viewform" target="_blank">
-      Formulaire de suggestions
-    </a> 👈🏼
-  </p>
-
-  <button type="button" onclick="goBackToMainMenu()" class="return-button top-return-button">
-    Retour
-  </button>
-</section>
-        
     </main>
 
     <footer>
         <p>&copy; Université de Béjaïa - جامعة بجاية</p>
     </footer>
 
-    <script src="script.js"></script>
+    <script>
+        // S3 JavaScript - Merged directly into HTML
+        
+        function showCalculator() {
+            document.getElementById('options').style.display = 'none';
+            document.getElementById('calculator').style.display = 'block';
+            document.getElementById('calculatorOptions').style.display = 'block';
+            document.getElementById('semesterForm').style.display = 'none';
+            document.getElementById('moduleForm').style.display = 'none';
+        }
+
+        function showModuleSection() {
+            document.getElementById('module').style.display = 'block';
+            document.getElementById('options').style.display = 'none';
+            document.getElementById('calculator').style.display = 'none';
+        }
+
+        function showModule(module) {
+            document.getElementById('moduleoptions').style.display = 'none';
+            document.getElementById('moduleContent').style.display = 'block';
+
+            let moduleTitle = '';
+            let moduleContent = '';
+
+            switch (module) {
+                case 'show':
+                    moduleTitle = 'Affichage';
+                    moduleContent = `
+                        <p>Emploi de Temps GM : <a href="https://drive.google.com/file/d/1FNkO6hAyzEfQ18IVfNWz3AhnXU4Jolew/view?usp=sharing" target="_blank">Télécharger le PDF</a></p>
+                        <p>Emploi de Temps GC : <a href="https://drive.google.com/file/d/1YbMbn7GxomGZmevXYu4GXEOZKhz1grp2/view?usp=sharing" target="_blank">Télécharger le PDF</a></p>
+                        <p>Emploi de Temps GP : <a href="https://drive.google.com/file/d/1TeeS5u1pjt4KeSJ3lCwUkRcIwvWY6ddO/view?usp=sharing" target="_blank">Télécharger le PDF</a></p>
+                        <p>Emploi de Temps ELT : <a href="https://drive.google.com/file/d/1LJ0Lm7rtuCyFcPX4bejWnBKCsCrzQ91v/view?usp=sharing" target="_blank">Télécharger le PDF</a></p>   
+                    `;
+                    break;
+                case 'rat':
+                    moduleTitle = 'Rattrapage';
+                    moduleContent = `<p>Soon.</p>`;
+                    break;     
+                case 'analyse':
+                    moduleTitle = 'Analyse 3';
+                    moduleContent = `<p>Séries numériques : <a href="https://drive.google.com/file/d/1SGkQt3NbdZ8_31aK87-XlSOAM8K9gXy7/view" target="_blank">Télécharger le PDF</a></p>`;
+                    break;
+                case 'analysenum':
+                    moduleTitle = 'Analyse numérique';
+                    moduleContent = `
+                        <p>Équations Non Linéiares : <a href="https://drive.google.com/file/d/1XJfEw7oADUS2gy708bajkKLQUP8uuJA0/view" target="_blank">Télécharger le PDF</a></p>
+                        <p>Systèmes d'Équations Linéaires : <a href="https://drive.google.com/file/d/1Xc3hQJmyedlAVVsOqiTRod1HBYkIGTQC/view" target="_blank">Télécharger le PDF</a></p>
+                    `;
+                    break;
+                case 'ondes':
+                    moduleTitle = 'Ondes et vibrations';
+                    moduleContent = `
+                        <p>Cours de Chapitre 1 : <a href="https://drive.google.com/file/d/16cK5FQZ4UQNA6OMSy1dgG_0vwhHjP26S/view" target="_blank">Télécharger le PDF</a></p>
+                        <p>Exercises Revision sur Chapitre 1 : <a href="https://drive.google.com/file/d/13qFKkC9osVZrfG_fuCOsheR5FcIrir-p/view" target="_blank">Télécharger le PDF</a></p>
+                        <p>Cours de Chapitre 2 : <a href="https://drive.google.com/file/d/1e1HKrtp1b5VoWbqZfa-NWOT7Xq6su3xM/view" target="_blank">Télécharger le PDF</a></p>
+                        <p>Exercises Revision sur Chapitre 2 : <a href="https://drive.google.com/file/d/1ocKMD4PpLHcGqKJdKdc-FAmFDV1aV8c7/view" target="_blank">Télécharger le PDF</a></p>
+                        <p>Cours de Chapitre 3-a : <a href="https://drive.google.com/file/d/1EWtJAK9tFbZBqkR7-pnicVhyo6u0Vt6O/view" target="_blank">Télécharger le PDF</a></p>
+                        <p>Cours de Chapitre 3-b : <a href="https://drive.google.com/file/d/13_0CQtAdgpO-vL1Ua55J9M6RpObZ-Mxf/view" target="_blank">Télécharger le PDF</a></p>
+                        <p>Exercises Revision sur Chapitre 3 : <a href="https://drive.google.com/file/d/1Z3hQwH2bhOj8ZKV9boeWwYEm_C0AfWbN/view" target="_blank">Télécharger le PDF</a></p>
+                        <p>Cours de Chapitre 4 : <a href="http://drive.google.com/file/d/1EUSObAGuBIDdfj1QMKLlZSyPQyH6N1Tl/view" target="_blank">Télécharger le PDF</a></p>
+                        <p>Exercises Revision sur Chapitre 4 : <a href="https://drive.google.com/file/d/1V-Zu1kzO3BkX4uESpvZyKb-qqUVuSUmh/view" target="_blank">Télécharger le PDF</a></p>
+                        <p>Cours de Chapitre 5 : <a href="https://drive.google.com/file/d/1cmVbjB1hNTKbjhsonZ3BclKTvZewRqbg/view" target="_blank">Télécharger le PDF</a></p>
+                        <p>Exercises Revision sur Chapitre 5 : <a href="https://drive.google.com/file/d/11GfOZSq21gm-t6S0frO6LkDXRkbH4Vuy/view" target="_blank">Télécharger le PDF</a></p>
+                        <p>Interrogation 1-a : <a href="https://drive.google.com/file/d/1e88ms0-w9WboJ37lJFrjNeEMkt6aq7xX/view" target="_blank">Télécharger le PDF</a></p>
+                        <p>Interrogation 1-b : <a href="https://drive.google.com/file/d/1cK0RuFHYzwUv3bH3jNyD2cdLd2kp1XII/view" target="_blank">Télécharger le PDF</a></p>
+                        <p>Interrogation 2-a : <a href="https://drive.google.com/file/d/1eGSXSGOb2XMrbPEBihmLtTSjKwaMGeBi/view" target="_blank">Télécharger le PDF</a></p>
+                        <p>Interrogation 2-b : <a href="https://drive.google.com/file/d/1EjPx5Maz-fN3vvi2nS8Kis9G_VaQD_qE/view" target="_blank">Télécharger le PDF</a></p>
+                        <p>Interrogation 2-c : <a href="https://drive.google.com/file/d/1NPVfDmXU4EVzLbYcZJycHFGiqwG8jry1/view" target="_blank">Télécharger le PDF</a></p>
+                        <p>Examen 2010 : <a href="https://drive.google.com/file/d/1PZE_1ytL0bKW2ZAqQ31Y6Rn0p5ZTh8K7/view" target="_blank">Télécharger le PDF</a></p>
+                        <p>Examen 2012 : <a href="https://drive.google.com/file/d/1P1KDcr2NW5YVK6PR0e8XKBH_v5Ai30Jt/view" target="_blank">Télécharger le PDF</a></p>
+                        <p>Examen 2013 (1) : <a href="https://drive.google.com/file/d/1ViHPzNvVkEOw0ZvpaUzmUTmsbu7j2jMC/view" target="_blank">Télécharger le PDF</a></p>
+                        <p>Examen 2013 (2) : <a href="https://drive.google.com/file/d/1KtguaCxr5rC1pmbYifOINZHCfz5cauOx/view" target="_blank">Télécharger le PDF</a></p>
+                        <p>Rattrapage 2012 : <a href="https://drive.google.com/file/d/1El2RDsIKPcKZo6Rjy3afUXk3P3Vfw9Yg/view" target="_blank">Télécharger le PDF</a></p>
+                        <p>Rattrapage 2013 : <a href="https://drive.google.com/file/d/1faUACGvI_oKU1Ec5nEUA9PpSataz5-Zm/view" target="_blank">Télécharger le PDF</a></p>
+                    `;
+                    break;
+                case 'electricite':
+                    moduleTitle = 'Electricité fondamentale';
+                    moduleContent = `<p>Nothing to show right now.</p>`;
+                    break;
+                case 'mecanique':
+                    moduleTitle = 'Mécanique rationnelle';
+                    moduleContent = `
+                        <p>Cours : <a href="https://drive.google.com/file/d/1d3k5dMqXImrwg49XP1B1kcrXIwq-BQbw/view?usp=drive_link" target="_blank">Télécharger le PDF</a></p>
+                        <p>Cours et Exercices : <a href="https://drive.google.com/file/d/1rFxPMiFWOq6yvzkOiA7Z_8XR46ZxqwHp/view?usp=drive_link" target="_blank">Télécharger le PDF</a></p>
+                    `;
+                    break;            
+                case 'python':
+                    moduleTitle = 'Programmation python';
+                    moduleContent = `
+                        <p>Python course : <a href="https://drive.google.com/file/d/1sJXEzQ5wXjowVP6VQZXv5kIaORXHWUsB/view?usp=sharing" target="_blank">Télécharger le PDF</a></p>
+                        <p>TP-01 : <a href="https://drive.google.com/file/d/1Jw_-kDhFm14csR-ctiiDUFf5CNmfxjYt/view?usp=sharing" target="_blank">Télécharger le PDF</a></p>         
+                    `;
+                    break;
+                case 'dao':
+                    moduleTitle = 'DAO';
+                    moduleContent = `
+                        <p>SolidWorks 2022 SP0 Full Premium Free Full Activated (14.7 GB) : Cliquez ici pour le <a href="https://s2.pesk.top/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE3NjcyMjU2MDAsInN1YiI6IkRTLlNvbGlkV29ya3MuMjAyMi5TUDAuUHJlbWl1bS1TU1EgW1Blc2tUb3AuY29tXS5yYXIiLCJzb3VyY2UiOiJodHRwczpcL1wvcGVza3RvcC5jb21cLyJ9.YFfl5Mf0DPV5r3g65msg6wIyYSnro4yiUgwdvjNwfM8" target="_blank">téléchargement direct</a> & consultez les <a href="https://drive.google.com/file/d/1qo39pRdJAdr4qHxKEwXnwkGdMQyc8zwe/view?usp=sharing" target="_blank">instructions ici</a></p>
+                    `;
+                    break;    
+                case 'env':
+                    moduleTitle = 'Energie et environnement';
+                    moduleContent = `<p>Nothing to show right now.</p>`;
+                    break;
+                case 'mat':
+                    moduleTitle = 'Matériaux composites';
+                    moduleContent = `<p>Nothing to show right now.</p>`;
+                    break;
+                default:
+                    moduleTitle = 'Sélectionner un module';
+                    moduleContent = '<p>Veuillez sélectionner un module pour afficher le contenu.</p>';
+            }
+
+            document.getElementById('moduleContent').innerHTML = `
+                <h2>${moduleTitle}</h2>
+                ${moduleContent}
+                <button type="button" onclick="goBackInModule()" class="return-button top-return-button">Retour</button>
+                <button type="button" onclick="goBackToMainMenu()" class="return-button top-return-button">Menu Principal</button>
+            `;
+        }
+
+        function goBackInModule() {
+            document.getElementById('moduleContent').style.display = 'none';
+            document.getElementById('moduleoptions').style.display = 'block';
+        }
+
+        function goBackToMainMenu() {
+            window.location.href = 'index.html';
+        }
+
+        function showSemesterCalculator() {
+            document.getElementById('calculatorOptions').style.display = 'none';
+            document.getElementById('semesterForm').style.display = 'block';
+            document.getElementById('moduleForm').style.display = 'none';
+        }
+
+        function goBackInCalculator() {
+            document.getElementById('semesterForm').style.display = 'none';
+            document.getElementById('moduleForm').style.display = 'none';
+            document.getElementById('calculatorOptions').style.display = 'block';
+        }
+
+        function showModuleCalculator() {
+            document.getElementById('calculatorOptions').style.display = 'none';
+            document.getElementById('moduleForm').style.display = 'block';
+            document.getElementById('semesterForm').style.display = 'none';
+        }
+
+        function calculateAverage() {
+            const inputs = document.querySelectorAll('#semesterForm input[type="number"]');
+            let isValid = true;
+
+            inputs.forEach(input => {
+                if (input.value === '' || isNaN(input.value)) {
+                    isValid = false;
+                    input.style.borderColor = 'red';
+                } else {
+                    input.style.borderColor = '';
+                }
+            });
+
+            if (!isValid) {
+                alert('Veuillez remplir tous les champs correctement.');
+                return;
+            }
+
+            const analyse_td = parseFloat(document.getElementById('analyse_td').value);
+            const analyse_exam = parseFloat(document.getElementById('analyse_exam').value);
+            const analysenum_td = parseFloat(document.getElementById('analysenum_td').value);
+            const analysenum_tp = parseFloat(document.getElementById('analysenum_tp').value);
+            const analysenum_exam = parseFloat(document.getElementById('analysenum_exam').value);
+            const ondes_td = parseFloat(document.getElementById('ondes_td').value);
+            const ondes_tp = parseFloat(document.getElementById('ondes_tp').value);
+            const ondes_exam = parseFloat(document.getElementById('ondes_exam').value);
+            const electricite_td = parseFloat(document.getElementById('electricite_td').value);
+            const electricite_tp = parseFloat(document.getElementById('electricite_tp').value);
+            const electricite_exam = parseFloat(document.getElementById('electricite_exam').value);
+            const mecanique_td = parseFloat(document.getElementById('mecanique_td').value);
+            const mecanique_exam = parseFloat(document.getElementById('mecanique_exam').value);
+            const python_td = parseFloat(document.getElementById('python_td').value);
+            const python_exam = parseFloat(document.getElementById('python_exam').value);
+            const dao_td = parseFloat(document.getElementById('dao_td').value);
+            const env_exam = parseFloat(document.getElementById('env_exam').value);
+            const mat_exam = parseFloat(document.getElementById('mat_exam').value);
+            
+            const note_analyse = (analyse_td * 0.4) + (analyse_exam * 0.6);
+            const note_analysenum = ((analysenum_td) * 0.2 + (analysenum_tp) * 0.2) + (analysenum_exam * 0.6);
+            const note_ondes = ((ondes_td) * 0.2 + (ondes_tp) * 0.2) + (ondes_exam * 0.6);
+            const note_electricite = ((electricite_td) * 0.2 + (electricite_tp) * 0.2) + (electricite_exam * 0.6);
+            const note_mecanique = (mecanique_td * 0.4) + (mecanique_exam * 0.6);
+            const note_python = (python_td * 0.4) + (python_exam * 0.6);
+            const note_dao = dao_td;
+            const note_env = env_exam;
+            const note_mat = mat_exam;
+            
+            const moy_uef = (note_ondes * 3 + note_electricite * 3 + note_analysenum * 3 + note_analyse * 3) / 12;
+            const moy_uem = (note_python * 2 + note_mecanique * 2) / 4;
+            const moy_uet = (note_dao * 1 + note_env * 1 + note_mat * 1) / 3;
+            const moyenne_semestre = (moy_uef * 12 + moy_uem * 4 + moy_uet * 3) / 19;
+            
+            document.getElementById('result').innerText = `Votre moyenne du semestre est : ${moyenne_semestre.toFixed(2)}`;
+        }
+
+        function calculateModuleAverage() {
+            const moduleType = document.getElementById('moduleSelect').value;
+            const moduleTd = parseFloat(document.getElementById('module_td').value); 
+            const moduleTp = parseFloat(document.getElementById('module_tp').value);
+            const moduleExam = parseFloat(document.getElementById('module_exam').value); 
+            let moduleAverage;
+            
+            switch (moduleType) {
+                case 'ondes':
+                case 'analysenum':
+                case 'electricite':  
+                    if (isNaN(moduleTd) || isNaN(moduleTp) || isNaN(moduleExam)) {
+                        alert('Veuillez remplir tous les champs pour ce module.');
+                        return;
+                    }
+                    moduleAverage = ((moduleTd + moduleTp) * 0.2) + (moduleExam * 0.6);
+                    break;
+                case 'analyse':
+                case 'mecanique':
+                case 'python':
+                    if (isNaN(moduleTd) || isNaN(moduleExam)) {
+                        alert('Veuillez remplir tous les champs pour ce module.');
+                        return;
+                    }
+                    moduleAverage = (moduleTd * 0.4) + (moduleExam * 0.6);
+                    break;
+                case 'dao':
+                    if (isNaN(moduleTd)) {
+                        alert('Veuillez remplir la note de TD pour ce module.');
+                        return;
+                    }
+                    moduleAverage = moduleTd * 1;
+                    break;
+                case 'env':
+                case 'mat':
+                    if (isNaN(moduleExam)) {
+                        alert('Veuillez remplir la note d\'examen pour ce module.');
+                        return;
+                    }
+                    moduleAverage = moduleExam * 1;
+                    break;
+                default:
+                    alert('Type de module non reconnu.');
+                    return;
+            }
+            document.getElementById('moduleaverageResult').innerText = moduleAverage.toFixed(2);
+        }
+    </script>
 </body>
 </html>
