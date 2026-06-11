@@ -16,16 +16,22 @@
         gtag('js', new Date());
         gtag('config', 'G-KJ70VFL0P5');
     </script>
-       <style>
-        /* Keep the same exact style as main menu buttons - stacked vertically */
-        .vertical-buttons {
+    <style>
+        /* Additional minimal styles to ensure the new selection panels 
+           use exactly the same button styling as the main .options-container buttons.
+           No extra layout changes — buttons will be stacked vertically (block).
+           We reuse .options-container for consistency. */
+        .selection-panel-card {
+            text-align: center;
+        }
+        .options-container-vertical {
             display: flex;
             flex-direction: column;
             gap: 10px;
             align-items: center;
             width: 100%;
         }
-        .vertical-buttons button {
+        .options-container-vertical button {
             width: 100%;
             max-width: 300px;
             padding: 15px 20px;
@@ -36,33 +42,20 @@
             font-size: 1rem;
             cursor: pointer;
             transition: background-color 0.3s ease, transform 0.2s ease;
+            margin: 0 auto;
         }
-        .vertical-buttons button:hover {
-            background-color: #1a4a8a;
-        }
-        .back-btn {
-            margin-top: 20px;
-            background-color: #173866;
-            color: white;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 5px;
-            font-size: 1rem;
-            cursor: pointer;
-            width: 100%;
-            max-width: 220px;
-        }
-        .back-btn:hover {
+        .options-container-vertical button:hover {
             background-color: #1a4a8a;
         }
         .section-title {
-            font-size: 1.3rem;
+            font-size: 1.5rem;
             font-weight: bold;
             margin-bottom: 20px;
             color: #173866;
-            text-align: center;
         }
-        /* No extra white background cards - reuse the existing main white background */
+        hr {
+            margin: 20px 0;
+        }
     </style>
 </head>
 <body>
@@ -93,10 +86,6 @@
                 <div class="options-container-vertical">
                     <button id="firstYearBtn">Première année</button>
                     <button id="secondYearBtn">Deuxième année</button>
-                </div>
-                <div style="display: flex; justify-content: center; margin-top: 30px;">
-                    <button class="back-button" id="backToMainFromYear">Retour</button>
-                </div>
             </div>
         </section>
 
